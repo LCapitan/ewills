@@ -1,0 +1,277 @@
+@import "./styles/variables.scss";
+@import "./styles/breakpoints.scss";
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 125px 150px;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  margin-top: 100px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  .videoContainer {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+
+    &:after {
+      padding-top: 56.25%;
+      display: block;
+      content: '';
+    }
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.content {
+  p {
+    color: $sand;
+    font-family: $copy;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.contentBlock {
+  display: flex;
+  align-items: flex-start;
+  margin: 100px auto;
+  max-width: 700px;
+  
+  h2 {
+    color: $pink;
+    font-family: $copy;
+    font-size: 22px;
+    margin-top: 0;
+    margin-right: 20px;
+    text-align: right;
+    width: 150px;
+    position: relative;
+
+    &:after {
+      background: $sand;
+      content: '';
+      display: block;
+      opacity: .5;
+      position: absolute;
+      top: 20px;
+      right: -55px;
+      transform: rotate(-55deg);
+      width: 60px;
+      height: 1px;
+    }
+  }
+
+  .actions {
+    margin-top: 45px;
+
+    @include sm-max {
+      margin-top: 25px;
+    }
+
+    a {
+      background: $pink;
+      border-radius: 100px;
+      color: $creme;
+      display: inline-block;
+      font-weight: 500;
+      padding: 15px 45px;
+      transition: 0.25s ease;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+      }
+
+      @include sm-max {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  h3 {
+    color: $sand;
+    font-family: $title;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+  }
+
+  .content {
+    flex: 1;
+    padding: 0 50px 0 50px;
+
+    p {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.fullWidthImage {
+  border-radius: 20px;
+  margin: 25px 0;
+  overflow: hidden;
+}
+
+.twoColImage {
+  display: flex;
+  gap: 50px;
+  margin: 25px 0;
+
+  > * {
+    border-radius: 20px;
+    flex: 1;
+  }
+}
+
+.imageContent {
+  display: flex;
+  align-items: center;
+  margin: 25px 0 150px;
+  
+  .image {
+    flex: 1;
+  }
+
+  .content {
+    padding-left: 50px;
+    width: 400px;
+
+    h3 {
+      color: $pink;
+      font-family: $copy;
+      font-size: 18px;
+    }
+
+    h4 {
+      color: $sand;
+      font-family: $title;
+      font-size: 20px;
+    }
+  }
+}
+
+.imageContentFlipped {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 25px 0 150px;
+  
+  .image {
+    flex: 1;
+  }
+
+  .content {
+    padding-right: 50px;
+    width: 400px;
+
+    h3 {
+      color: $pink;
+      font-family: $copy;
+      font-size: 18px;
+    }
+
+    h4 {
+      color: $sand;
+      font-family: $title;
+      font-size: 20px;
+    }
+  }
+}
+
+.divider {
+  background: $sand;
+  margin: 50px 0 50;
+  opacity: .25;
+  width: 100%;
+  height: 1px;
+}
+
+.heading {
+  display: flex;
+  margin: 75px 0;
+  gap: 100px;
+
+  h1 {
+    color: $pink;
+    font-family: $title;
+    font-size: 7rem;
+    line-height: 1;
+    margin: 0 0 50px;
+  }
+
+  .headingContent {
+    flex: 1;
+
+    .content {
+      font-family: $copy;
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .tags {
+      margin-top: 50px;
+
+      span {
+        background: $sand;
+        border-radius: 100px;
+        color: $creme;
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        padding: 15px 30px;
+      }
+    }
+  }
+
+  .hr {
+    display: block;
+    margin-bottom: 75px;
+  }
+
+  .rightRail {
+    font-family: $copy;
+    margin-top: 45px;
+    width: 310px;
+
+    .rightRailItem {
+      color: $sand;
+      margin-bottom: 50px;
+
+      span {
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

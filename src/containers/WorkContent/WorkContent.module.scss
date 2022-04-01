@@ -1,0 +1,115 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.workContent {
+  padding: 125px 0;
+  position: relative;
+
+  .titleArea {
+    background: $creme;
+    height: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    &:after {
+      background: linear-gradient($creme, transparent);
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      z-index: 2;
+    }
+
+    h1 {
+      color: $navy;
+      font-family: $copy;
+      font-size: 3rem;
+      line-height: 1;
+      opacity: 0.25;
+      position: relative;
+      top: 50px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .inner {
+    display: flex;
+
+    .workList {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      list-style-type: none;
+      margin: 100px 0;
+      padding: 0;
+      position: relative;
+      width: 100%;
+      z-index: 1;
+
+      li {
+        margin: 75px 0;
+        position: relative;
+
+        > div {
+          height: 160px;
+          text-align: center;
+        }
+
+        h2 {
+          color: $navy;
+          font-family: $title;
+          font-size: 10rem;
+          line-height: 1;
+          margin: 0;
+          opacity: 0.15;
+          transition: 0.25s ease;
+        }
+
+        .image {
+          opacity: 0;
+          position: relative;
+          top: 0px;
+          z-index: 1;
+          transition: 0.25s ease;
+          height: 0;
+        }
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+
+          h2 {
+            color: $pink;
+            opacity: 1;
+          }
+
+          .image {
+            opacity: 1;
+            position: relative;
+            top: -100px;
+            z-index: 1;
+          }
+        }
+
+        &:nth-child(2) {
+          &:hover,
+          &:focus {
+            cursor: pointer;
+  
+            .image {
+              top: -250px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

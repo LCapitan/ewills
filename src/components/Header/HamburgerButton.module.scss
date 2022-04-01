@@ -1,0 +1,110 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.hamburger {
+  position: relative;
+  display: block;
+  right: 0;
+  width: 75px;
+  height: 29px;
+
+  &:before {
+    background: $pink;
+    border-radius: 10px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 5px;
+    transform: rotate(0deg);
+    transition: 0.25s ease;
+    transform-origin: center right;
+  }
+
+  &:after {
+    background: $pink;
+    border-radius: 10px;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 5px;
+    transform: rotate(0deg);
+    transition: 0.25s ease;
+    transform-origin: center right;
+  }
+
+  > div {
+    background: $pink;
+    border-radius: 10px;
+    display: block;
+    width: 75px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    transition: 0.25s ease;
+  }
+
+  &:hover,
+  &:focus {
+    &:before,
+    &:after,
+    > div {
+      width: 50px;
+    }
+  }
+
+  .srOnly {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+
+  &.open {
+    > div {
+      width: 0;
+    }
+
+    &:before {
+      background: $pink;
+      border-radius: 10px;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 35px;
+      transform: rotate(-45deg);
+      transition: 0.25s ease;
+    }
+
+    &:after {
+      background: $pink;
+      border-radius: 10px;
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 35px;
+      transform: rotate(45deg);
+      transition: 0.25s ease;
+    }
+  }
+}

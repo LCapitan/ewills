@@ -1,0 +1,62 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.AboutContent {
+  padding: 125px 0;
+
+  h1 {
+    font-family: $title;
+    font-size: 12rem;
+    line-height: 1;
+    opacity: 0.1;
+    position: fixed;
+    bottom: -150px;
+    right: 0;
+  }
+
+  .inner {
+    display: flex;
+    gap: 75px;
+  }
+
+  .image {
+    flex: 1;
+  }
+
+  .homeContentCopy {
+    flex: 1;
+  }
+
+  .actions {
+    margin-top: 45px;
+
+    @include sm-max {
+      margin-top: 25px;
+    }
+
+    a {
+      background: $pink;
+      border-radius: 100px;
+      color: $creme;
+      display: inline-block;
+      font-weight: 500;
+      padding: 15px 45px;
+      transition: 0.25s ease;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+      }
+
+      @include sm-max {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}

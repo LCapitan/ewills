@@ -1,0 +1,77 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.hero {
+  margin-top: 150px;
+  padding: 0;
+
+  h1 {
+    color: $pink;
+    font-family: $title;
+    font-size: 13rem;
+    line-height: 1;
+    margin: 0;
+
+    span {
+      display: block;
+    }
+  }
+
+  .namePhoto {
+    display: flex;
+    align-items: flex-end;
+
+    .image {
+      flex: 1;
+    }
+  }
+
+  .intro {
+    color: $navy;
+    font-family: $copy;
+    font-size: 22px;
+    padding-left: 50px;
+    opacity: 0.25;
+  }
+
+  .heroContent {
+  }
+
+  .heroSub {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 100px 0 0;
+      padding: 0 50px;
+      list-style-type: none;
+      width: 100%;
+
+      li {
+        color: $pink;
+        font-family: $copy;
+        font-size: 22px;
+        position: relative;
+
+        > span {
+          position: relative;
+          display: block;
+          width: 8px;
+          height: 8px;
+
+          &:after {
+            background: $pink;
+            border-radius: 10px;
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 8px;
+          }
+        }
+      }
+    }
+  }
+}

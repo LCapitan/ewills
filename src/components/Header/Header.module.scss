@@ -1,0 +1,64 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.header {
+  padding: 0 100px;
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  z-index: 99;
+
+  .nameMark {
+    color: $pink;
+    font-family: $title;
+    font-weight: bold;
+    line-height: 1;
+
+    span {
+      display: block;
+    }
+  }
+
+  .innerWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .leftSide,
+  .rightSide {
+    position: fixed;
+  }
+
+  .leftSide {
+    color: $pink;
+    font-family: $copy;
+    font-size: 14px;
+    font-weight: 500;
+    top: 50%;
+    left: 80px;
+    transform: rotate(-90deg) translateY(-50%);
+    text-transform: uppercase;
+  }
+
+  .rightSide {
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 10px 0;
+
+        svg {
+          fill: $pink;
+          width: 20px;
+          height: auto;
+        }
+      }
+    }
+  }
+}

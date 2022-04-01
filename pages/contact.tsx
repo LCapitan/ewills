@@ -7,15 +7,15 @@ import { HomeHero } from '../src/containers/index';
 
 import styles from '../styles/Home.module.scss';
 
-const Home: NextPage = () => {
+const Contact: NextPage = () => {
   return (
     <>
       {/* <Header/> */}
       <main className={styles.container}>
-        <HomeHero />
+        Contact
       </main>
     </>
   )
 }
 
-export default Home;
+export default Contact;
