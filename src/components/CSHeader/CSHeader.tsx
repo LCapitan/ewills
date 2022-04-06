@@ -27,8 +27,8 @@ const CaseStudyHeader: React.FC<CaseStudyHeaderProps> = ({
           {children}
         </div>
         <div className={styles.tags}>
-          {tags && tags.map((tag) =>
-            <span>{tag}</span>
+          {tags && tags.map((tag, i) =>
+            <span key={tags[i]}>{tag}</span>
           )}
         </div>
       </div>

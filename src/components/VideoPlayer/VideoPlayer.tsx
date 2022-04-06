@@ -22,24 +22,25 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
   const videoHandler = (control: any) => {
     if (control === "play") {
-      vidRef.current.play();
+      vidRef?.current?.play();
       setPlaying(true);
       const vidElem = document.getElementById("video");
-      setVideoTime(vidElem.duration);
+      setVideoTime((vidElem as HTMLVideoElement)?.duration);
     } else if (control === "pause") {
-      vidRef.current.pause();
+      vidRef?.current?.pause();
       setPlaying(false);
     }
   };
 
   const videoToggle = () => {
     if (playing) {
-      vidRef.current.pause();
+      vidRef.current!.pause();
       setPlaying(false);
       const vidElem = document.getElementById("video");
-      setVideoTime(vidElem.duration);
+      vidRef?.current?.pause()!;
+      setVideoTime((vidElem as HTMLVideoElement)?.duration);
     } else {
-      vidRef.current.play();
+      vidRef?.current?.play();
       setPlaying(true);
     }
   };
@@ -49,11 +50,11 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
   }
 
   const fastForward = () => {
-    vidRef.current.currentTime += 5;
+    vidRef.current!.currentTime += 5;
   };
 
   const revert = () => {
-    vidRef.current.currentTime -= 5;
+    vidRef.current!.currentTime -= 5;
   };
 
   useEffect(() => {
@@ -68,11 +69,11 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
     window.setInterval(function () {
       const vidElem = document.getElementById("video");
 
-      setCurrentTime(vidRef.current?.currentTime);
-      setProgress((vidRef.current?.currentTime / videoTime) * 100);
+      setCurrentTime(vidRef?.current?.currentTime!);
+      setProgress((vidRef?.current?.currentTime! / videoTime) * 100);
 
-      if (vidElem && vidElem.ended) {
-        vidRef.current.currentTime = 0;
+      if (vidElem && (vidElem as HTMLVideoElement)?.ended) {
+        vidRef.current!.currentTime = 0;
         setPlaying(false);
       }
     }, 1000);
@@ -82,7 +83,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
     <div className={styles.videoContainer}>
       <div className={styles.videoPlayer}>
         {/* Video */}
-        <video id="video" ref={vidRef} allowFullScreen onClick={videoToggle}>
+        <video id="video" ref={vidRef} className={styles.videoElem} onClick={videoToggle}>
           <source src={vidSrc} />
         </video>
         {/* Video Controls */}
