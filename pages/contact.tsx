@@ -11,7 +11,7 @@ const Contact: NextPage = () => {
   return (
     <>
       {/* <Header/> */}
-      <main className={styles.container}>
+      <main className="container">
         Contact
       </main>
     </>

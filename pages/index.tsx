@@ -10,7 +10,7 @@ import styles from '../styles/Home.module.scss';
 const Home: NextPage = () => {
   return (
     <>
-      <main className={styles.container}>
+      <main className="container">
         <HomeHero />
       </main>
     </>

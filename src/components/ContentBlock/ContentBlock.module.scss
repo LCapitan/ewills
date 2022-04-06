@@ -1,0 +1,54 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.contentBlock {
+  display: flex;
+  align-items: flex-start;
+  margin: 100px auto;
+
+  h2 {
+    color: $pink;
+    font-family: $copy;
+    font-size: 22px;
+    margin-top: 0;
+    margin-right: 20px;
+    text-align: right;
+    width: 150px;
+    position: relative;
+
+    &:after {
+      background: $sand;
+      content: '';
+      display: block;
+      opacity: .5;
+      position: absolute;
+      top: 20px;
+      right: -55px;
+      transform: rotate(-55deg);
+      width: 60px;
+      height: 1px;
+    }
+  }
+
+  h3 {
+    color: $sand;
+    font-family: $copy;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+  }
+
+  .content {
+    color: $sand;
+    flex: 1;
+    padding: 0 50px 0 50px;
+
+    p {
+      color: $sand;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

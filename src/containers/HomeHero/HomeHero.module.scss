@@ -2,7 +2,7 @@
 @import "../../../styles/breakpoints.scss";
 
 .hero {
-  margin-top: 150px;
+  margin-top: 6%;
   padding: 0;
 
   h1 {
@@ -20,9 +20,12 @@
   .namePhoto {
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 
     .image {
       flex: 1;
+      max-width: 500px;
+      margin-bottom: -20px;
     }
   }
 
@@ -34,8 +37,7 @@
     opacity: 0.25;
   }
 
-  .heroContent {
-  }
+  .heroContent {}
 
   .heroSub {
     ul {
@@ -48,19 +50,19 @@
       width: 100%;
 
       li {
-        color: $pink;
+        color: $sand;
         font-family: $copy;
         font-size: 22px;
         position: relative;
 
-        > span {
+        >span {
           position: relative;
           display: block;
           width: 8px;
           height: 8px;
 
           &:after {
-            background: $pink;
+            background: $sand;
             border-radius: 10px;
             content: "";
             display: block;

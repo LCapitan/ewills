@@ -11,8 +11,8 @@ const About: NextPage = () => {
   return (
     <>
       {/* <Header/> */}
-      <main className={styles.container}>
-        <AboutContent/>
+      <main className="container">
+        <AboutContent />
       </main>
     </>
   )

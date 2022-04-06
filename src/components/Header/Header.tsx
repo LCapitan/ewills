@@ -12,13 +12,15 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.leftSide}>
-        my work
-      </div>
+      <Link href="/work" passHref>
+        <span className={styles.leftSide}>
+          my work
+        </span>
+      </Link>
       <div className={styles.rightSide}>
         <ul>
-          <li><Instagram/></li>
-          <li><Twitter/></li>
+          <li><Instagram /></li>
+          <li><Twitter /></li>
           <li>F</li>
         </ul>
       </div>

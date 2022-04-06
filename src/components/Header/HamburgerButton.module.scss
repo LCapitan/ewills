@@ -9,10 +9,11 @@
   height: 29px;
 
   &:before {
-    background: $pink;
+    background: $sand;
     border-radius: 10px;
     content: "";
     display: block;
+    opacity: .5;
     position: absolute;
     top: 0;
     right: 0;
@@ -24,10 +25,11 @@
   }
 
   &:after {
-    background: $pink;
+    background: $sand;
     border-radius: 10px;
     content: "";
     display: block;
+    opacity: .5;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -38,10 +40,11 @@
     transform-origin: center right;
   }
 
-  > div {
-    background: $pink;
+  >div {
+    background: $sand;
     border-radius: 10px;
     display: block;
+    opacity: .5;
     width: 75px;
     height: 5px;
     position: absolute;
@@ -53,31 +56,18 @@
 
   &:hover,
   &:focus {
+    cursor: pointer;
+
     &:before,
     &:after,
-    > div {
+    >div {
       width: 50px;
+      opacity: 1;
     }
   }
 
-  .srOnly {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-  }
-
-  &:hover,
-  &:focus {
-    cursor: pointer;
-  }
-
   &.open {
-    > div {
+    >div {
       width: 0;
     }
 
@@ -86,6 +76,7 @@
       border-radius: 10px;
       content: "";
       display: block;
+      opacity: 1;
       position: absolute;
       top: 0;
       right: 0;
@@ -99,6 +90,7 @@
       border-radius: 10px;
       content: "";
       display: block;
+      opacity: 1;
       position: absolute;
       bottom: 0;
       right: 0;
