@@ -1,10 +1,8 @@
-import Logo from "./Logo";
-import Instagram from "./Instagram";
-import Discord from "./Discord";
-import Twitter from "./Twitter";
-import Bunny from "./Bunny";
-import Arrow from "./Arrow";
-import Wallet from "./Wallet";
-import OpenSea from "./OpenSea";
-
-export { Logo, Discord, Twitter, Instagram, Bunny, Arrow, Wallet, OpenSea}
+export * from "./Backwards";
+export * from "./Forward";
+export * from "./Fullscreen";
+export * from "./Instagram";
+export * from "./PauseButton";
+export * from "./PlayButton";
+export * from "./PlayTriangle";
+export * from "./Twitter";

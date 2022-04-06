@@ -11,10 +11,10 @@ export default function Hamburger() {
     <div id="hamburger" onClick={() => setMenuOpen(!menuOpen)} className={classnames(styles.hamburger, menuOpen && styles.open)}>
       <div>
         {menuOpen ?
-          <span className={styles.srOnly}>
+          <span className="srOnly">
             Close Menu
           </span> :
-          <span className={styles.srOnly}>
+          <span className="srOnly">
             Open Menu
           </span>
         }

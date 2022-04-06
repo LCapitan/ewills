@@ -11,8 +11,8 @@ const Work: NextPage = () => {
   return (
     <>
       {/* <Header/> */}
-      <main className={styles.container}>
-        <WorkContent/>
+      <main className="container">
+        <WorkContent />
       </main>
     </>
   )

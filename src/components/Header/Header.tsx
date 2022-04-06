@@ -2,7 +2,7 @@ import { useMediaQuery } from "@mantine/hooks";
 import Link from "next/link";
 import React, { useContext } from 'react';
 import UIContext from "../../context/UIContext";
-import { Logo, Instagram, Twitter } from '../Icons'
+import { Instagram, Twitter } from '../Icons'
 import Menu from "../Menu/Menu";
 import Hamburger from './HamburgerButton';
 
@@ -12,13 +12,15 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.leftSide}>
-        my work
-      </div>
+      <Link href="/work" passHref>
+        <span className={styles.leftSide}>
+          my work
+        </span>
+      </Link>
       <div className={styles.rightSide}>
         <ul>
-          <li><Instagram/></li>
-          <li><Twitter/></li>
+          <li><Instagram /></li>
+          <li><Twitter /></li>
           <li>F</li>
         </ul>
       </div>
