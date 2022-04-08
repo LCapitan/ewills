@@ -13,7 +13,7 @@ import styles from '../CaseStudy.module.scss';
 
 const EveContent = () => {
   return (
-    <>
+    <div className={styles.csWrapper}>
       <CSHero vidSrc='/assets/video/Eve-Video.mp4' />
 
       <CSHeader
@@ -29,7 +29,7 @@ const EveContent = () => {
         timeline='16 Weeks'
         tools='Figma, Illustrator, Photoshop, After Effects'
         role='User Research, Strategy, Branding, UX/UI, Product Design'>
-        <p>Eve is digital platform that makes the journey for death more approachable and sustainable. kwefnk eflwnfeklwnfe klw nfek  lwnfe kl nfwlke nfwl knfel kwnfelk wnf ewkl fne wlfnwe.</p>
+        <p>Eve is a digital platform designed to make planning for death easier on you, your loved ones, and the earth.</p>
       </CSHeader>
 
       <div className={styles.divider}></div>
@@ -41,7 +41,7 @@ const EveContent = () => {
       </ContentBlock>
 
       <FullWidthImage
-        imgSrc='https://via.placeholder.com/1200x600'
+        imgSrc='/assets/img/graveyard.gif'
         imgAlt=''
       />
 
@@ -59,7 +59,7 @@ const EveContent = () => {
       />
 
       <FullWidthImage
-        imgSrc='/assets/img/planning.gif'
+        imgSrc='/assets/img/eve-leaves.gif'
         imgAlt=''
       />
 
@@ -79,7 +79,7 @@ const EveContent = () => {
       </ContentBlock>
 
       <FullWidthImage
-        imgSrc='https://via.placeholder.com/1200x600'
+        imgSrc='/assets/img/planning.gif'
         imgAlt=''
       />
 
@@ -88,46 +88,71 @@ const EveContent = () => {
         <p>Eve believes that planning for death does not have to be uncomfortable; it can be empowering, educational, and deeply personal giving users greater control and peace of mind surrounding their impact and how they want to be remembered.</p>
       </ContentBlock>
 
+      <FullWidthImage
+        imgSrc='/assets/img/homepage-overview.gif'
+        imgAlt=''
+      />
+
       <TwoColImg
+        weird
         imgSrc="/assets/img/onboarding.gif"
         imgAlt=""
         title="user onboarding"
       >
-        <p>Interface is simple and approachable. Messaging has a friendly and empathetic tone. Sustainable focus across messaging, visuals, and illustrations</p>
+        <ul className={styles.bullets}>
+          <li>Interface is simple and approachable.</li>
+          <li>Messaging has a friendly and empathetic tone.</li>
+          <li>Sustainable focus across messaging, visuals, and illustrations</li>
+        </ul>
       </TwoColImg>
 
       <TwoColImg
         flipped
-        imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1648763833/machine-learning_ad4u9z.png"
+        imgSrc="/assets/img/preference-questions.gif"
         imgAlt=""
         title="user preferences"
       >
-        <p>Prompted with questions for Eve to understand user&#39;s goals, wishes, and personal preferences such as, “What brings you here today?”, “What is important to you when thinking about EOL care?”, and “What is your favorite sustainable brand?”</p>
+        <p>Prompted with questions for Eve to understand user&#39;s goals, wishes, and personal preferences such as:</p>
+
+        <ul className={styles.bullets}>
+          <li>“What brings you here today?”</li>
+          <li>“What is important to you when thinking about EOL care?”</li>
+          <li>“What is your favorite sustainable brand?”</li>
+        </ul>
       </TwoColImg>
 
       <TwoColImg
-        imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1648763833/machine-learning_ad4u9z.png"
+        imgSrc="/assets/img/profile-page.gif"
         imgAlt=""
         title="user profile"
       >
-        <p>The user&#39;s central hub for all things end-of-life. Dashboard page allows you to start a new basic plan for you or a loved one, edit and manage incomplete tasks, and view and engage in tailored educational content based on the user&#39;s preferences.</p>
+        <p>The user&#39;s central hub for all things end-of-life. Dashboard page allows you to:</p>
+
+        <ul className={styles.bullets}>
+          <li>Start a new basic plan for you or a loved one</li>
+          <li>Edit and manage tasks</li>
+          <li>View and engage in tailored educational content based on the user&#39;s preferences</li>
+        </ul>
       </TwoColImg>
 
       <TwoColImg
         flipped
-        imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1648763833/machine-learning_ad4u9z.png"
+        imgSrc="/assets/img/share-documents.gif"
         imgAlt=""
         title="plan &amp; document sharing"
       >
-        <p>Eve encourages users to complete their basic plans and share them with the people they trust to carry them out through reminders and reward offerings. Easily add/remove people to your plan, safely upload and store important documents to keep everything central and further reduce carbon footprint, seamlessly create - and add money to - a budget to keep yourself on track and lighten the burden for loved ones.</p>
+        <p>Eve encourages users to complete their basic plans and share them with the people they trust to carry them out through reminders and reward offerings.</p>
+        <p>Easily add/remove people to your plan, safely upload and store important documents to keep everything central and further reduce carbon footprint.</p>
+        <p>seamlessly create - and add money to - a budget to keep yourself on track and lighten the burden for loved ones.</p>
       </TwoColImg>
 
       <TwoColImg
-        imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1648763833/machine-learning_ad4u9z.png"
+        imgSrc="/assets/img/features.gif"
         imgAlt=""
         title="plan features"
       >
-        <p>Overview of modules that are available to complete and preview of additional features that come with a Premium Plan upgrade. Access to network of death doulas, digital photo gallery storing for future generations, prompted questions for reflection puposes and memory documenting, Digital Presence preferences, stories &amp; letters to loved ones.</p>
+        <p>Overview of modules that are available to complete</p>
+        <p>Preview of additional features that come with a Premium Plan upgrade.</p>
       </TwoColImg>
 
       <ContentBlock title='04' subtitle='Integration of machine learning through AI to encourage greener practices'>
@@ -135,7 +160,7 @@ const EveContent = () => {
       </ContentBlock>
 
       <FullWidthImage
-        imgSrc='https://via.placeholder.com/1200x600'
+        imgSrc='/assets/img/machine-learning.gif'
         imgAlt=''
       />
 
@@ -143,14 +168,9 @@ const EveContent = () => {
         <p>With a premium plan, users have access to additional resources such as death doulas, who can offer additional guidance and emotional support in areas surrounding their own death, a loved ones death, or navigating grief. Users will also be able to look up green funeral services being offered nearby their location.</p>
       </ContentBlock>
 
-      <FullWidthImage
-        imgSrc='https://via.placeholder.com/1200x600'
-        imgAlt=''
-      />
-
       <TwoColImg
         flipped
-        imgSrc="https://via.placeholder.com/575x600"
+        imgSrc="/assets/img/eve-logo-animation.gif"
         imgAlt=""
         title="why eve?"
       >
@@ -161,7 +181,7 @@ const EveContent = () => {
         <p>Eve is one of the few companies to offer a free option for EOL planning, promoting accessibility for all users.</p>
       </TwoColImg>
 
-      <ContentBlock title='reflections' subtitle='Death Doula platform push for greener burial practices while also encouraging people to plan for end-of-life sooner?'>
+      {/* <ContentBlock title='reflections' subtitle='Death Doula platform push for greener burial practices while also encouraging people to plan for end-of-life sooner?'>
         <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee. Artisan narwhal jean shorts fingerstache prism, snackwave taiyaki pug squid tofu. Readymade schlitz banh mi tumblr enamel pin, deep v vinyl farm-to-table venmo cred hell of.</p>
 
         <div className={styles.actions}>
@@ -174,8 +194,8 @@ const EveContent = () => {
       <FullWidthImage
         imgSrc='https://via.placeholder.com/1200x600'
         imgAlt=''
-      />
-    </>
+      /> */}
+    </div>
   )
 }
 

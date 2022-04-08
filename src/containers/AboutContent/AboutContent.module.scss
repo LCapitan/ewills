@@ -2,7 +2,7 @@
 @import "../../../styles/breakpoints.scss";
 
 .AboutContent {
-  padding: 150px 0;
+  padding: 100px 0;
   position: relative;
 
   h1 {
@@ -11,12 +11,12 @@
     line-height: 1;
     opacity: 0.07;
     position: absolute;
-    bottom: -150px;
-    right: 10%;
+    top: -150px;
+    right: 0;
     z-index: 1;
   }
 
-  .inner {
+  .contentWrapper {
     display: flex;
     align-items: center;
     gap: 75px;
@@ -36,6 +36,15 @@
     p {
       color: $sand;
     }
+
+    .name {
+      color: $pink;
+      display: block;
+      font-family: $title;
+      font-size: 60px;
+      font-weight: 600;
+      line-height: 73px;
+    }
   }
 
   .actions {
@@ -46,7 +55,7 @@
     }
 
     a {
-      background: $pink;
+      background: $sand;
       border-radius: 100px;
       color: $creme;
       display: inline-block;
