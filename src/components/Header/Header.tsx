@@ -2,13 +2,13 @@ import { useMediaQuery } from "@mantine/hooks";
 import Link from "next/link";
 import React, { useContext } from 'react';
 import UIContext from "../../context/UIContext";
-import { Instagram, Twitter } from '../Icons'
+import { Instagram, Twitter, Facebook } from '../Icons'
 import Menu from "../Menu/Menu";
 import Hamburger from './HamburgerButton';
 
 import styles from './Header.module.scss'
 
-export default function Header() {
+const Header = () => {
 
   return (
     <header className={styles.header}>
@@ -19,9 +19,21 @@ export default function Header() {
       </Link>
       <div className={styles.rightSide}>
         <ul>
-          <li><Instagram /></li>
-          <li><Twitter /></li>
-          <li>F</li>
+          <li>
+            <a href="https://www.instagram.com/emmmywills/">
+              <Instagram />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/emmyy_wills">
+              <Twitter />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/emma.wills.52">
+              <Facebook />
+            </a>
+          </li>
         </ul>
       </div>
       <div className={styles.innerWrapper}>
@@ -40,3 +52,5 @@ export default function Header() {
     </header>
   )
 }
+
+export default Header;

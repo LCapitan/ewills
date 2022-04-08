@@ -13,13 +13,12 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 85%;
-  max-width: 1600px;
+  width: 80%;
+  max-width: 1400px;
   padding: 0 50px;
 }
 
 .main {
-  min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -29,7 +28,7 @@ body {
 }
 
 p {
-  color: $navy;
+  color: $sand;
   font-family: $copy;
   font-size: 18px;
   line-height: 28px;

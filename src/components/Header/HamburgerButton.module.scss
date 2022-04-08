@@ -72,7 +72,6 @@
     }
 
     &:before {
-      background: $pink;
       border-radius: 10px;
       content: "";
       display: block;
@@ -80,13 +79,12 @@
       position: absolute;
       top: 0;
       right: 0;
-      width: 35px;
+      width: 34px;
       transform: rotate(-45deg);
       transition: 0.25s ease;
     }
 
     &:after {
-      background: $pink;
       border-radius: 10px;
       content: "";
       display: block;
@@ -94,7 +92,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      width: 35px;
+      width: 34px;
       transform: rotate(45deg);
       transition: 0.25s ease;
     }

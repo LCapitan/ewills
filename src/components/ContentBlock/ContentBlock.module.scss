@@ -42,13 +42,13 @@
     color: $sand;
     flex: 1;
     padding: 0 50px 0 50px;
+  }
 
-    p {
-      color: $sand;
+  p {
+    color: $sand;
 
-      &:first-child {
-        margin-top: 0;
-      }
+    &:first-child {
+      margin-top: 0;
     }
   }
 }

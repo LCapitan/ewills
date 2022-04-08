@@ -2,84 +2,120 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+import { Parallax } from 'react-scroll-parallax';
+import { WorkCard } from "../../components";
+
 import styles from './WorkContent.module.scss';
 
 const WorkContent = () => {
   return (
     <div className={styles.workContent}>
-      <h1>work</h1>
+      <div className={styles.title}>
+        <h1>work</h1>
+      </div>
+
       <ul className={styles.workList}>
         <li>
-          <Link href="/work/eve" passHref>
-            <div className={styles.workItem}>
-              <Image src='https://res.cloudinary.com/austinmel/image/upload/v1649249335/eveimage_ldqbep.jpg' width='1200' height='1200' alt='an illustration of people cleaning up the Earth' layout='responsive' />
-              <div className={styles.content}>
-                <h2>eve</h2>
-                <div className={styles.popUp}>
-                  A digital platform that makes the journey for death more approachable and sustainable.
-                </div>
-                <div className={styles.tags}>
-                  <span>accessibility</span>
-                  <span>product design</span>
-                  <span>user experience</span>
-                </div>
-              </div>
-            </div>
-          </Link>
+          <WorkCard
+            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649249335/eveimage_ldqbep.jpg"
+            imgAlt="an illustration of people cleaning up the Earth"
+            cardLink="/work/eve"
+            title="eve"
+            content="A digital platform that makes the journey for death more approachable and sustainable"
+            tags={[
+              'sustainability',
+              'service design',
+              'accessibility',
+              'machine learning',
+              'human-centered design'
+            ]}
+          />
         </li>
         <li>
-          <Link href="/work/eve" passHref>
-            <div className={styles.workItem}>
-              <Image src='https://res.cloudinary.com/austinmel/image/upload/v1649249526/honsbuns_tegtzn.jpg' width='1200' height='1200' alt='an illustration of people cleaning up the Earth' layout='responsive' />
-              <div className={styles.content}>
-                <h2>hon's buns</h2>
-                <div className={styles.popUp}>
-                  A digital platform that makes the journey for death more approachable and sustainable.
-                </div>
-                <div className={styles.tags}>
-                  <span>accessibility</span>
-                  <span>product design</span>
-                  <span>user experience</span>
-                </div>
-              </div>
-            </div>
-          </Link>
+          <WorkCard
+            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649263364/honsbuns_hxjmxq.jpg"
+            imgAlt="an illustration of beautiful bunny"
+            cardLink="/work/haven"
+            title="haven"
+            content="The baddest bunny-themed NFTs on the scene"
+            tags={[
+              'ui',
+              'ux',
+              'web3',
+              'crypto',
+              'branding',
+              'strategy',
+              'illustration',
+              'accessibility',
+            ]}
+          />
         </li>
         <li>
-          <Link href="/work/eve" passHref>
-            <div className={styles.workItem}>
-              <Image src='https://res.cloudinary.com/austinmel/image/upload/v1649249526/honsbuns_tegtzn.jpg' width='1200' height='1200' alt='an illustration of people cleaning up the Earth' layout='responsive' />
-              <div className={styles.content}>
-                <h2>hon's buns</h2>
-                <div className={styles.popUp}>
-                  A digital platform that makes the journey for death more approachable and sustainable.
-                </div>
-                <div className={styles.tags}>
-                  <span>accessibility</span>
-                  <span>product design</span>
-                  <span>user experience</span>
-                </div>
-              </div>
-            </div>
-          </Link>
+          <WorkCard
+            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649263364/honsbuns_hxjmxq.jpg"
+            imgAlt="an illustration of beautiful bunny"
+            cardLink="/work/honsbuns"
+            title="hon's buns"
+            content="The baddest bunny-themed NFTs on the scene"
+            tags={[
+              'ui',
+              'ux',
+              'web3',
+              'crypto',
+              'branding',
+              'strategy',
+              'illustration',
+              'accessibility',
+            ]}
+          />
         </li>
         <li>
-          <Link href="/work/eve" passHref>
-            <div className={styles.workItem}>
-              <Image src='https://res.cloudinary.com/austinmel/image/upload/v1649249335/eveimage_ldqbep.jpg' width='1200' height='1200' alt='an illustration of people cleaning up the Earth' layout='responsive' />
-              <div className={styles.content}>
-                <h2>eve</h2>
-                <div className={styles.popUp}>
-                  A digital platform that makes the journey for death more approachable and sustainable.
-                </div>
-                <div className={styles.tags}>
-                  <span>accessibility</span>
-                  <span>product design</span>
-                  <span>user experience</span>
-                </div>
-              </div>
-            </div>
-          </Link>
+          <WorkCard
+            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649267493/rvabowls_yn3zpg.jpg"
+            imgAlt="a photo of an acai bowl from RVA Bowls"
+            cardLink="/work/rvabowls"
+            title="rva bowls"
+            content="The real Richmond experience, art, pottery, and food"
+            tags={[
+              'branding',
+              'strategy',
+              'app design',
+              'website redesign',
+              'experience design'
+            ]}
+          />
+        </li>
+        <li>
+          <WorkCard
+            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649267493/rvabowls_yn3zpg.jpg"
+            imgAlt="a photo of an acai bowl from RVA Bowls"
+            cardLink="/work/3m"
+            title="3M pride"
+            content="The real Richmond experience, art, pottery, and food"
+            tags={[
+              'branding',
+              'strategy',
+              'app design',
+              'website redesign',
+              'experience design'
+            ]}
+          />
+        </li>
+        <li>
+          <WorkCard
+            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649267493/rvabowls_yn3zpg.jpg"
+            imgAlt="a photo of an acai bowl from RVA Bowls"
+            cardLink="/work/cairo"
+            title="cairo olympics"
+            content="The real Richmond experience, art, pottery, and food"
+            tags={[
+              'branding',
+              'strategy',
+              'app design',
+              'website redesign',
+              'experience design'
+            ]}
+          />
         </li>
       </ul>
     </div>

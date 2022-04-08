@@ -1,7 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { CSHero, CSHeader, ContentBlock } from '../../../components/index';
+import {
+  CSHero,
+  CSHeader,
+  ContentBlock,
+  FullWidthImage,
+  TwoColImg
+} from '../../../components/index';
 
 import styles from '../CaseStudy.module.scss';
 
@@ -28,224 +34,133 @@ const EveContent = () => {
 
       <div className={styles.divider}></div>
 
-      {/* 
-        ====================================================== 
-        START CONTENT BLOCK
-        ======================================================
-      */}
-      <ContentBlock title='background'>
-        <p>Death is taboo, covid has blah blah blah I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee. Artisan narwhal jean shorts fingerstache prism, snackwave taiyaki pug squid tofu. Readymade schlitz banh mi tumblr enamel pin, deep v vinyl.</p>
-        <p>Fam truffaut iPhone gastropub, butcher af kinfolk 90&#39;s next level gochujang vape glossier selfies quinoa. Cold-pressed narwhal helvetica, bushwick swag brooklyn bespoke chicharrones DIY selvage. Pork belly you probably haven&#39;t heard of them williamsburg, kale chips</p>
+      <ContentBlock title="background">
+        <p>Death is a taboo subject, especially in American culture despite that we all will inevitablely face it one day. Adding a global pandemic into the mix has made our mortality part of daily life and only heightened our fears as a society. There is a need now more than ever to destigmatize death and normalize the conversations and planning surrounding it for the sake of ourselves and our loved ones.</p>
+
+        <p>Additionally, the way we practice death is unsustainable. Traditional burial practices take up usable land along with leaving detrimental impacts to our environment. As people become aware of the ways our behaviors negatively effect the environment, our traditions surrounding death need to change. </p>
       </ContentBlock>
-      {/*
-        ====================================================== 
-        END CONTENT BLOCK
-        ======================================================
-      */}
 
-      <div className={styles.fullWidthImage}>
-        <Image src="https://via.placeholder.com/1200x600" width="1200" height="600" alt="" layout="responsive" />
-      </div>
+      <FullWidthImage
+        imgSrc='https://via.placeholder.com/1200x600'
+        imgAlt=''
+      />
 
-      {/* 
-        ====================================================== 
-        START CONTENT BLOCK
-        ======================================================
-      */}
-      <ContentBlock title='problem' subtitle='Traditional burials are taking up usable land as well as significantly impacting our environment'>
-        <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee. Artisan narwhal jean shorts fingerstache prism, snackwave taiyaki pug squid tofu. Readymade schlitz banh mi tumblr enamel pin, deep v vinyl farm-to-table venmo cred hell of.</p>
+      <ContentBlock title='problem' subtitle="People aren&#39;t planning for their deaths, so traditional burials are often the default choice.">
+        <p>Our society has began to prioritize sustainability in many areas of our lives so why aren&#39;t people going green in our deaths too? Because people aren&#39;t planning. In fact, over 92% of people aren&#39;t planning for their death or end-of-life, leaving the burden to fall on loved ones. When this happens, traditional burials are chosen out of convenience and familiarity.</p>
       </ContentBlock>
-      {/*
-        ====================================================== 
-        END CONTENT BLOCK
-        ======================================================
-      */}
 
-      {/* 
-        ====================================================== 
-        START CONTENT BLOCK
-        ======================================================
-      */}
-      <ContentBlock title='insight' subtitle='Over 92% of people arent planning for their deaths, leaving it to fall on loved ones'>
-        <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee. Artisan narwhal jean shorts fingerstache prism, snackwave taiyaki pug squid tofu. Readymade schlitz banh mi tumblr enamel pin, deep v vinyl farm-to-table venmo cred hell of.</p>
+      <ContentBlock title='insight' subtitle='Traditional burials are taking up usable land as well as significantly impacting our environment'>
+        <p>Nearly 59 million people die each year globally, and with population rising that number is only growing. We are running out of land to bury our loved ones. Traditional burials are not only costly, but permanently take up usable land with around 100,000 tons of steel going into the earth every year just in the US - that&#39;s enough to rebuild the entire Golden Gate Bridge! Not to mention the untold amount of formaldehyde and toxic chemicals too.</p>
       </ContentBlock>
-      {/*
-        ====================================================== 
-        END CONTENT BLOCK
-        ======================================================
-      */}
 
-      {/* 
-        ====================================================== 
-        START CONTENT BLOCK
-        ======================================================
-      */}
-      <ContentBlock title='opportunity' subtitle='How do we push for greener burial practices while also encouraging people to plan for end-of-life sooner?'>
-        <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee. Artisan narwhal jean shorts fingerstache prism, snackwave taiyaki pug squid tofu. Readymade schlitz banh mi tumblr enamel pin, deep v vinyl farm-to-table venmo cred hell of.</p>
-      </ContentBlock>
-      {/*
-        ====================================================== 
-        END CONTENT BLOCK
-        ======================================================
-      */}
+      <ContentBlock
+        title='opportunity'
+        subtitle='Encourage people to plan for end-of-life sooner but with sustainability in mind'
+      />
 
-      <div className={styles.fullWidthImage}>
-        <Image src="https://via.placeholder.com/1200x600" width="1200" height="600" alt="" layout="responsive" />
-      </div>
+      <FullWidthImage
+        imgSrc='/assets/img/planning.gif'
+        imgAlt=''
+      />
 
-      {/* 
-        ====================================================== 
-        START CONTENT BLOCK
-        ======================================================
-      */}
       <ContentBlock title='01' subtitle='name &amp; branding'>
-        <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee. Artisan narwhal jean shorts fingerstache prism, snackwave taiyaki pug squid tofu. Readymade schlitz banh mi tumblr enamel pin, deep v vinyl farm-to-table venmo cred hell of.</p>
+        <p>Eve&#39;s branding and design system was carefully crafted in order to reflect its values of sustainability while also prioritizing being approachable to users. It was important that Eve as a brand evoked a sense of calm and peace of mind to users to offset the uncomfortable and heavy subject of death, and this is seen through the colors, symbols, and visuals that Eve uses across its platform.</p>
       </ContentBlock>
-      {/*
-        ====================================================== 
-        END CONTENT BLOCK
-        ======================================================
-      */}
 
-      <div className={styles.twoColImage}>
-        <Image src="https://res.cloudinary.com/austinmel/image/upload/v1648762282/logo_shhgxs.jpg" width="575" height="600" alt="" layout="responsive" />
+      <TwoColImg
+        imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1648762282/logo_shhgxs.jpg"
+        imgAlt="Eve logo"
+        imgSrc2="https://res.cloudinary.com/austinmel/image/upload/v1648763076/color-palette_qi24sv.jpg"
+        imgAlt2="Eve branding colors and fonts"
+      />
 
-        <Image src="https://res.cloudinary.com/austinmel/image/upload/v1648763076/color-palette_qi24sv.jpg" width="575" height="600" alt="" layout="responsive" />
-      </div>
-
-      {/* 
-        ====================================================== 
-        START CONTENT BLOCK
-        ======================================================
-      */}
       <ContentBlock title='02' subtitle='A partnership that encourages end-of-life planning sooner rather than later'>
-        <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee. Artisan narwhal jean shorts fingerstache prism, snackwave taiyaki pug squid tofu. Readymade schlitz banh mi tumblr enamel pin, deep v vinyl farm-to-table venmo cred hell of.</p>
+        <p>While Eve&#39;s platform will be available for anyone to use, Eve will first launch through a B2B model, partnering with sustainable companies who will incorporate Eve as part of a benefits package that is offered to new employees during the job onboarding process.</p>
       </ContentBlock>
-      {/*
-        ====================================================== 
-        END CONTENT BLOCK
-        ======================================================
-      */}
 
-      <div className={styles.fullWidthImage}>
-        <Image src="https://via.placeholder.com/1200x600" width="1200" height="600" alt="" layout="responsive" />
-      </div>
+      <FullWidthImage
+        imgSrc='https://via.placeholder.com/1200x600'
+        imgAlt=''
+      />
 
-      {/* 
-        ====================================================== 
-        START CONTENT BLOCK
-        ======================================================
-      */}
-      <ContentBlock title='03' subtitle='A partnership that encourages end-of-life planning sooner rather tA human-centered platform designed for education, connection, and peace of mind with a focus on sustainability'>
-        <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee. Artisan narwhal jean shorts fingerstache prism, snackwave taiyaki pug squid tofu. Readymade schlitz banh mi tumblr enamel pin, deep v vinyl farm-to-table venmo cred hell of.</p>
+      <ContentBlock title='03' subtitle='A human-centered platform designed for education, connection, and peace of mind with a focus on sustainability'>
+        <p>Eve&#39;s vision is to be the central resource that any one person uses for education, guidance, and connection when planning for end-of-life.</p>
+        <p>Eve believes that planning for death does not have to be uncomfortable; it can be empowering, educational, and deeply personal giving users greater control and peace of mind surrounding their impact and how they want to be remembered.</p>
       </ContentBlock>
-      {/*
-        ====================================================== 
-        END CONTENT BLOCK
-        ======================================================
-      */}
 
-      <div className={styles.imageContent}>
-        <div className={styles.image}>
-          <Image src="https://res.cloudinary.com/austinmel/image/upload/v1648763833/machine-learning_ad4u9z.png" width="675" height="490" alt="" layout="responsive" />
-        </div>
+      <TwoColImg
+        imgSrc="/assets/img/onboarding.gif"
+        imgAlt=""
+        title="user onboarding"
+      >
+        <p>Interface is simple and approachable. Messaging has a friendly and empathetic tone. Sustainable focus across messaging, visuals, and illustrations</p>
+      </TwoColImg>
 
-        <div className={styles.content}>
-          <h3>user onboarding</h3>
-          <h4>I&#39;m baby chambray raclette distillery semioticsa</h4>
-          <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee..</p>
-        </div>
-      </div>
+      <TwoColImg
+        flipped
+        imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1648763833/machine-learning_ad4u9z.png"
+        imgAlt=""
+        title="user preferences"
+      >
+        <p>Prompted with questions for Eve to understand user&#39;s goals, wishes, and personal preferences such as, “What brings you here today?”, “What is important to you when thinking about EOL care?”, and “What is your favorite sustainable brand?”</p>
+      </TwoColImg>
 
-      <div className={styles.imageContentFlipped}>
-        <div className={styles.image}>
-          <Image src="https://res.cloudinary.com/austinmel/image/upload/v1648763833/machine-learning_ad4u9z.png" width="675" height="490" alt="" layout="responsive" />
-        </div>
+      <TwoColImg
+        imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1648763833/machine-learning_ad4u9z.png"
+        imgAlt=""
+        title="user profile"
+      >
+        <p>The user&#39;s central hub for all things end-of-life. Dashboard page allows you to start a new basic plan for you or a loved one, edit and manage incomplete tasks, and view and engage in tailored educational content based on the user&#39;s preferences.</p>
+      </TwoColImg>
 
-        <div className={styles.content}>
-          <h3>user profile</h3>
-          <h4>I&#39;m baby chambray raclette distillery semioticsa</h4>
-          <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee..</p>
-        </div>
-      </div>
+      <TwoColImg
+        flipped
+        imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1648763833/machine-learning_ad4u9z.png"
+        imgAlt=""
+        title="plan &amp; document sharing"
+      >
+        <p>Eve encourages users to complete their basic plans and share them with the people they trust to carry them out through reminders and reward offerings. Easily add/remove people to your plan, safely upload and store important documents to keep everything central and further reduce carbon footprint, seamlessly create - and add money to - a budget to keep yourself on track and lighten the burden for loved ones.</p>
+      </TwoColImg>
 
-      <div className={styles.imageContent}>
-        <div className={styles.image}>
-          <Image src="https://res.cloudinary.com/austinmel/image/upload/v1648763833/machine-learning_ad4u9z.png" width="675" height="490" alt="" layout="responsive" />
-        </div>
+      <TwoColImg
+        imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1648763833/machine-learning_ad4u9z.png"
+        imgAlt=""
+        title="plan features"
+      >
+        <p>Overview of modules that are available to complete and preview of additional features that come with a Premium Plan upgrade. Access to network of death doulas, digital photo gallery storing for future generations, prompted questions for reflection puposes and memory documenting, Digital Presence preferences, stories &amp; letters to loved ones.</p>
+      </TwoColImg>
 
-        <div className={styles.content}>
-          <h3>user preferences</h3>
-          <h4>I&#39;m baby chambray raclette distillery semioticsa</h4>
-          <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee..</p>
-        </div>
-      </div>
-
-      <div className={styles.imageContentFlipped}>
-        <div className={styles.image}>
-          <Image src="https://res.cloudinary.com/austinmel/image/upload/v1648763833/machine-learning_ad4u9z.png" width="675" height="490" alt="" layout="responsive" />
-        </div>
-
-        <div className={styles.content}>
-          <h3>peace of mind</h3>
-          <h4>I&#39;m baby chambray raclette distillery semioticsa</h4>
-          <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee..</p>
-        </div>
-      </div>
-
-      <div className={styles.imageContent}>
-        <div className={styles.image}>
-          <Image src="https://res.cloudinary.com/austinmel/image/upload/v1648763833/machine-learning_ad4u9z.png" width="675" height="490" alt="" layout="responsive" />
-        </div>
-
-        <div className={styles.content}>
-          <h3>platform features</h3>
-          <h4>I&#39;m baby chambray raclette distillery semioticsa</h4>
-          <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee..</p>
-        </div>
-      </div>
-
-      {/* 
-        ====================================================== 
-        START CONTENT BLOCK
-        ======================================================
-      */}
-      <ContentBlock title='04' subtitle='Integration of machine learning through AI to encourage sustainability'>
-        <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee. Artisan narwhal jean shorts fingerstache prism, snackwave taiyaki pug squid tofu. Readymade schlitz banh mi tumblr enamel pin, deep v vinyl farm-to-table venmo cred hell of.</p>
+      <ContentBlock title='04' subtitle='Integration of machine learning through AI to encourage greener practices'>
+        <p>Eve&#39;s platform simplifies the journey of planning for death through its easy to use interface and integration of machine learning. Eve leverages machine learning to understand the user&#39;s needs while also advocating for sustainable alternatives. Users will be provided tailored educational resources and AI suggestions based on their previously selected preferences that support greener practices while also aligning with their values and wishes.</p>
       </ContentBlock>
-      {/*
-        ====================================================== 
-        END CONTENT BLOCK
-        ======================================================
-      */}
 
-      <div className={styles.fullWidthImage}>
-        <Image src="https://via.placeholder.com/1200x600" width="1200" height="600" alt="" layout="responsive" />
-      </div>
+      <FullWidthImage
+        imgSrc='https://via.placeholder.com/1200x600'
+        imgAlt=''
+      />
 
-      {/* 
-        ====================================================== 
-        START CONTENT BLOCK
-        ======================================================
-      */}
       <ContentBlock title='05' subtitle='Connection to live resources based on user&#39;s proximity and preferences including death doulas and green funeral services'>
-        <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee. Artisan narwhal jean shorts fingerstache prism, snackwave taiyaki pug squid tofu. Readymade schlitz banh mi tumblr enamel pin, deep v vinyl farm-to-table venmo cred hell of.</p>
+        <p>With a premium plan, users have access to additional resources such as death doulas, who can offer additional guidance and emotional support in areas surrounding their own death, a loved ones death, or navigating grief. Users will also be able to look up green funeral services being offered nearby their location.</p>
       </ContentBlock>
-      {/*
-        ====================================================== 
-        END CONTENT BLOCK
-        ======================================================
-      */}
 
-      <div className={styles.fullWidthImage}>
-        <Image src="https://via.placeholder.com/1200x600" width="1200" height="600" alt="" layout="responsive" />
-      </div>
+      <FullWidthImage
+        imgSrc='https://via.placeholder.com/1200x600'
+        imgAlt=''
+      />
 
-      {/* 
-        ====================================================== 
-        START CONTENT BLOCK
-        ======================================================
-      */}
+      <TwoColImg
+        flipped
+        imgSrc="https://via.placeholder.com/575x600"
+        imgAlt=""
+        title="why eve?"
+      >
+        <p>Eve offers comprehensive education and awareness about greener alternatives that no other company does and plays an active role in advocating for sustainability efforts.</p>
+
+        <p>Eve is the only platform at this time that invites Death Doulas into this process as well as provides a platform for them to host, connect, and build trust &amp; relationships with users early-on.</p>
+
+        <p>Eve is one of the few companies to offer a free option for EOL planning, promoting accessibility for all users.</p>
+      </TwoColImg>
+
       <ContentBlock title='reflections' subtitle='Death Doula platform push for greener burial practices while also encouraging people to plan for end-of-life sooner?'>
         <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee. Artisan narwhal jean shorts fingerstache prism, snackwave taiyaki pug squid tofu. Readymade schlitz banh mi tumblr enamel pin, deep v vinyl farm-to-table venmo cred hell of.</p>
 
@@ -255,15 +170,11 @@ const EveContent = () => {
           </Link>
         </div>
       </ContentBlock>
-      {/*
-        ====================================================== 
-        END CONTENT BLOCK
-        ======================================================
-      */}
 
-      <div className={styles.fullWidthImage}>
-        <Image src="https://via.placeholder.com/1200x600" width="1200" height="600" alt="" layout="responsive" />
-      </div>
+      <FullWidthImage
+        imgSrc='https://via.placeholder.com/1200x600'
+        imgAlt=''
+      />
     </>
   )
 }

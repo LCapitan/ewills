@@ -1,16 +1,19 @@
 import { useRef, useState, useEffect } from "react";
 import classnames from "classnames";
+import Image from "next/image";
 
 import { PlayButton, PlayTriangle, PauseButton, Forward, Backwards, Fullscreen } from "../Icons/index";
 
 import styles from './VideoPlayer.module.scss';
 
 interface VideoPlayerProps {
-  vidSrc?: string
+  vidSrc?: string,
+  vidCover?: string
 }
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({
-  vidSrc
+  vidSrc,
+  vidCover
 }) => {
 
   const vidRef = useRef<HTMLVideoElement>(null);
@@ -84,6 +87,8 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
       <div className={styles.videoPlayer}>
         {/* Video */}
         <video id="video" ref={vidRef} className={styles.videoElem} onClick={videoToggle}>
+          {/* <Image className={classnames(styles.videoCover, playing && styles.playing)} src={vidCover} alt="" width="1200" height="662" /> */}
+
           <source src={vidSrc} />
         </video>
         {/* Video Controls */}

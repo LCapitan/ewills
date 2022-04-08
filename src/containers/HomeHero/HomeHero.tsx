@@ -23,7 +23,7 @@ const HomeHero = () => {
             <li><span></span></li>
             <li>entrepreneur</li>
             <li><span></span></li>
-            <li>visionary</li>
+            <li>empath</li>
           </ul>
         </div>
       </div>
