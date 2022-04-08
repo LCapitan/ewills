@@ -1,4 +1,5 @@
 export * from "./Backwards";
+export * from "./Facebook";
 export * from "./Forward";
 export * from "./Fullscreen";
 export * from "./Instagram";

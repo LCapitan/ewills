@@ -23,7 +23,6 @@
 
     &:hover,
     &:focus {
-      cursor: pointer;
       opacity: 1;
     }
   }
@@ -36,7 +35,6 @@
   .leftSide,
   .rightSide {
     position: fixed;
-    display: none;
   }
 
   .leftSide {
@@ -63,17 +61,38 @@
     transform: translateY(-50%);
 
     ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       list-style-type: none;
       margin: 0;
       padding: 0;
 
       li {
-        margin: 10px 0;
+        margin: 5px 0;
 
-        svg {
-          fill: $pink;
-          width: 20px;
-          height: auto;
+        a {
+          opacity: .5;
+          transition: .25s ease;
+
+          svg {
+            fill: $sand;
+            width: 25px;
+            height: auto;
+          }
+
+          &:hover,
+          &:focus {
+            opacity: 1;
+          }
+        }
+
+        &:last-child {
+          a {
+            svg {
+              width: 30px;
+            }
+          }
         }
       }
     }

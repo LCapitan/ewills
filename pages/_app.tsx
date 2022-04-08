@@ -1,16 +1,20 @@
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import UIContextProvider from '../src/providers/UIContextProvider'
-import { Header } from '../src/components'
+import { ParallaxProvider } from 'react-scroll-parallax';
+import { Header, Footer } from '../src/components'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <UIContextProvider>
-      <>
-      <Header/>
-      <Component {...pageProps} />
-      </>
-    </UIContextProvider>
+    <ParallaxProvider>
+      <UIContextProvider>
+        <>
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
+        </>
+      </UIContextProvider>
+    </ParallaxProvider>
   )
 }
 

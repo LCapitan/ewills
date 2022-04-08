@@ -6,7 +6,7 @@ import styles from './ContentBlock.module.scss'
 interface ContentBlockProps {
   title: string,
   subtitle?: string
-  children: any
+  children?: any
 }
 
 const ContentBlock: React.FC<ContentBlockProps> = ({

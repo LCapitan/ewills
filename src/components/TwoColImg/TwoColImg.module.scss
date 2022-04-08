@@ -1,0 +1,47 @@
+@import "./styles/variables.scss";
+@import "./styles/breakpoints.scss";
+
+.twoColImage {
+  display: flex;
+  gap: 50px;
+  margin: 25px 0;
+
+  .image {
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1;
+  }
+}
+
+.imageContent {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 150px 0 150px;
+
+  .image {
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1;
+  }
+
+  .content {
+    width: 400px;
+
+    h3 {
+      color: $pink;
+      font-family: $copy;
+      font-size: 18px;
+    }
+
+    h4 {
+      color: $sand;
+      font-family: $title;
+      font-size: 20px;
+    }
+  }
+
+  &.flipped {
+    flex-direction: row-reverse;
+  }
+}

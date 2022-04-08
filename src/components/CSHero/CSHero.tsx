@@ -8,18 +8,20 @@ import styles from './CSHero.module.scss';
 
 interface CSHeroProps {
   vidSrc?: string,
+  vidCover?: string,
   imgSrc?: string
 }
 
 const CSHero: React.FC<CSHeroProps> = ({
   vidSrc,
+  vidCover,
   imgSrc
 }) => {
 
   return (
     <div className={styles.hero}>
       {vidSrc &&
-        <VideoPlayer vidSrc={vidSrc} />
+        <VideoPlayer vidSrc={vidSrc} vidCover={vidCover} />
       }
       {imgSrc &&
         <div className={styles.inner}>

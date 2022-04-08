@@ -4,7 +4,7 @@
 .videoContainer {
   overflow: hidden;
   position: relative;
-  margin: -20px 0;
+  margin: -2% 0;
   width: 100%;
 
   &:after {
@@ -27,6 +27,19 @@
       &:hover,
       &:focus {
         cursor: pointer;
+      }
+
+      .videoCover {
+        // position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+
+        &.playing {
+          opacity: 0;
+        }
       }
     }
 
@@ -51,7 +64,7 @@
       z-index: 1;
 
       &:after {
-        background: darken($sand, 35%);
+        background: $navy;
         content: '';
         display: block;
         opacity: .5;
