@@ -33,7 +33,7 @@ const WorkContent = () => {
         </li>
         <li>
           <WorkCard
-            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649263364/honsbuns_hxjmxq.jpg"
+            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649404890/Haven_watches_qknzk9.png"
             imgAlt="an illustration of beautiful bunny"
             cardLink="/work/haven"
             title="haven"
@@ -87,7 +87,23 @@ const WorkContent = () => {
         </li>
         <li>
           <WorkCard
-            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649267493/rvabowls_yn3zpg.jpg"
+            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649405756/IMG_3115_doe4qp.jpg"
+            imgAlt="a photo of an acai bowl from RVA Bowls"
+            cardLink="/work/toast"
+            title="totally toast"
+            content="The real Richmond experience, art, pottery, and food"
+            tags={[
+              'branding',
+              'strategy',
+              'app design',
+              'website redesign',
+              'experience design'
+            ]}
+          />
+        </li>
+        <li>
+          <WorkCard
+            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649404956/3m_ogowpq.png"
             imgAlt="a photo of an acai bowl from RVA Bowls"
             cardLink="/work/3m"
             title="3M pride"
@@ -103,10 +119,26 @@ const WorkContent = () => {
         </li>
         <li>
           <WorkCard
-            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649267493/rvabowls_yn3zpg.jpg"
-            imgAlt="a photo of an acai bowl from RVA Bowls"
+            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649404790/cairo_ratyrd.png"
+            imgAlt="a photo of the Cairo Olympics logo prototype"
             cardLink="/work/cairo"
             title="cairo olympics"
+            content="The real Richmond experience, art, pottery, and food"
+            tags={[
+              'branding',
+              'strategy',
+              'app design',
+              'website redesign',
+              'experience design'
+            ]}
+          />
+        </li>
+        <li>
+          <WorkCard
+            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649405098/Empire_Designs_edit_copy_uj6qvu.jpg"
+            imgAlt="a photo of Empire Designs Jean Shorts by Emily Wills"
+            cardLink="/work/empire"
+            title="empire designs"
             content="The real Richmond experience, art, pottery, and food"
             tags={[
               'branding',
