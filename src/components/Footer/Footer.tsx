@@ -15,32 +15,32 @@ const Footer = () => {
           </div>
 
           <div className={styles.quote}>
-            <em>"Leave everything and everyone better than you found them.<br /> The rest will work itself out.”</em>
+            <em>&#34;Leave everything and everyone better than you found them.<br /> The rest will work itself out.&#34;</em>
           </div>
 
           <ul className={styles.sitemap}>
             <li>
-              <Link href="/">
+              <Link href="/" passHref>
                 <span>home</span>
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="/about" passHref>
                 <span>about</span>
               </Link>
             </li>
             <li>
-              <Link href="/work">
+              <Link href="/work" passHref>
                 <span>work</span>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/" passHref>
                 <span>fun</span>
               </Link>
             </li>
             <li>
-              <Link href="/">
+              <Link href="/" passHref>
                 <span>contact</span>
               </Link>
             </li>
@@ -48,17 +48,17 @@ const Footer = () => {
 
           <ul className={styles.socialMenu}>
             <li>
-              <a href="/">
+              <a href="https://www.instagram.com/emmmywills/">
                 <Instagram />
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="https://twitter.com/emmyy_wills">
                 <Twitter />
               </a>
             </li>
             <li>
-              <a href="/">
+              <a href="https://www.facebook.com/emma.wills.52">
                 <Facebook />
               </a>
             </li>

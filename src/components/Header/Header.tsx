@@ -20,17 +20,17 @@ const Header = () => {
       <div className={styles.rightSide}>
         <ul>
           <li>
-            <a href="/">
+            <a href="https://www.instagram.com/emmmywills/">
               <Instagram />
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="https://twitter.com/emmyy_wills">
               <Twitter />
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="https://www.facebook.com/emma.wills.52">
               <Facebook />
             </a>
           </li>
