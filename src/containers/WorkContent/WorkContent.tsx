@@ -21,7 +21,7 @@ const WorkContent = () => {
             imgAlt="an illustration of people cleaning up the Earth"
             cardLink="/work/eve"
             title="eve"
-            content="A digital platform that makes the journey for death more approachable and sustainable"
+            content="a digital platform that makes the journey for death more approachable and sustainable"
             tags={[
               'sustainability',
               'service design',
@@ -34,19 +34,16 @@ const WorkContent = () => {
         <li>
           <WorkCard
             imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649404890/Haven_watches_qknzk9.png"
-            imgAlt="an illustration of beautiful bunny"
+            imgAlt="photo of Haven watches"
             cardLink="/work/haven"
             title="haven"
-            content="The baddest bunny-themed NFTs on the scene"
+            content="using wearable technology to provide personal safety for young women"
             tags={[
-              'ui',
-              'ux',
-              'web3',
-              'crypto',
+              'ui/ux',
+              'product design',
               'branding',
               'strategy',
-              'illustration',
-              'accessibility',
+              'human-centered design'
             ]}
           />
         </li>
@@ -56,10 +53,9 @@ const WorkContent = () => {
             imgAlt="an illustration of beautiful bunny"
             cardLink="/work/honsbuns"
             title="hon's buns"
-            content="The baddest bunny-themed NFTs on the scene"
+            content="the baddest bunny-themed NFTs on the scene"
             tags={[
-              'ui',
-              'ux',
+              'ui/ux',
               'web3',
               'crypto',
               'branding',
@@ -75,44 +71,26 @@ const WorkContent = () => {
             imgAlt="a photo of an acai bowl from RVA Bowls"
             cardLink="/work/rvabowls"
             title="rva bowls"
-            content="The real Richmond experience, art, pottery, and food"
+            content="a restaurant, studio, and art gallery that gives back to the local community"
             tags={[
-              'branding',
+              'ui/ux',
+              'product design',
               'strategy',
-              'app design',
-              'website redesign',
-              'experience design'
+              'branding',
+              'web design'
             ]}
           />
         </li>
         <li>
           <WorkCard
             imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649405756/IMG_3115_doe4qp.jpg"
-            imgAlt="a photo of an acai bowl from RVA Bowls"
+            imgAlt="a photo of a piece of a homemade peanut butter and chocolate toast"
             cardLink="/work/toast"
             title="totally toast"
-            content="The real Richmond experience, art, pottery, and food"
+            content="a passion project centered around my love for toast"
             tags={[
               'branding',
-              'strategy',
-              'app design',
-              'website redesign',
-              'experience design'
-            ]}
-          />
-        </li>
-        <li>
-          <WorkCard
-            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649404956/3m_ogowpq.png"
-            imgAlt="a photo of an acai bowl from RVA Bowls"
-            cardLink="/work/3m"
-            title="3M pride"
-            content="The real Richmond experience, art, pottery, and food"
-            tags={[
-              'branding',
-              'strategy',
-              'app design',
-              'website redesign',
+              'product design',
               'experience design'
             ]}
           />
@@ -123,12 +101,27 @@ const WorkContent = () => {
             imgAlt="a photo of the Cairo Olympics logo prototype"
             cardLink="/work/cairo"
             title="cairo olympics"
-            content="The real Richmond experience, art, pottery, and food"
+            content="olympics for Good"
             tags={[
               'branding',
-              'strategy',
-              'app design',
-              'website redesign',
+              'product design',
+              '3D',
+              'experience design',
+              'sustainability'
+            ]}
+          />
+        </li>
+        <li>
+          <WorkCard
+            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649404956/3m_ogowpq.png"
+            imgAlt="a photo of 3M creating their post it note mural"
+            cardLink="/work/3m"
+            title="3M pride"
+            content="3M partners with twin cities pride festival"
+            tags={[
+              'ui/ux',
+              'product design',
+              '3D',
               'experience design'
             ]}
           />
@@ -139,13 +132,12 @@ const WorkContent = () => {
             imgAlt="a photo of Empire Designs Jean Shorts by Emily Wills"
             cardLink="/work/empire"
             title="empire designs"
-            content="The real Richmond experience, art, pottery, and food"
+            content="a handcrafted highwaisted shorts company"
             tags={[
               'branding',
-              'strategy',
-              'app design',
-              'website redesign',
-              'experience design'
+              'product design',
+              'fashion',
+              'social strategy'
             ]}
           />
         </li>

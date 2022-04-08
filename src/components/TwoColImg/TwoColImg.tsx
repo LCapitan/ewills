@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from './TwoColImg.module.scss'
 
 interface TwoColImgProps {
+  weird?: boolean,
   flipped?: boolean,
   imgSrc: string,
   imgAlt: string,
@@ -12,10 +13,13 @@ interface TwoColImgProps {
   subtitle?: string,
   children?: any,
   imgSrc2?: string,
-  imgAlt2?: string
+  imgAlt2?: string,
+  imgWidth?: string,
+  imgHeight?: string
 }
 
 const TwoColImg: React.FC<TwoColImgProps> = ({
+  weird,
   flipped,
   imgSrc,
   imgAlt,
@@ -23,14 +27,16 @@ const TwoColImg: React.FC<TwoColImgProps> = ({
   subtitle,
   children,
   imgSrc2,
-  imgAlt2
+  imgAlt2,
+  imgWidth,
+  imgHeight
 }) => {
   return (
     <>
       {title &&
         <div className={classnames(styles.imageContent, flipped && styles.flipped)}>
           <div className={styles.image}>
-            <Image src={imgSrc} width="675" height="490" alt={imgAlt} layout="responsive" />
+            <Image src={imgSrc} width="675" height="602" alt={imgAlt} layout="responsive" />
           </div>
 
           <div className={styles.content}>
