@@ -11,6 +11,15 @@ body {
   font-family: $copy;
 }
 
+.quote {
+  color: $sand;
+  display: block;
+  font-family: $title;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 45px;
+}
+
 .container {
   margin: 0 auto;
   width: 80%;

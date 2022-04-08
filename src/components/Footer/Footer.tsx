@@ -14,10 +14,6 @@ const Footer = () => {
             emily<span>wills</span>
           </div>
 
-          <div className={styles.quote}>
-            <em>&#34;Leave everything and everyone better than you found them.<br /> The rest will work itself out.&#34;</em>
-          </div>
-
           <ul className={styles.sitemap}>
             <li>
               <Link href="/" passHref>

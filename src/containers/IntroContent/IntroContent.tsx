@@ -12,8 +12,8 @@ const IntroContent = () => {
           <Image src="https://res.cloudinary.com/austinmel/image/upload/v1648668905/emily-bunny_1_dk3gf0.png" alt="hon's buns nft image" layout="responsive" width="584" height="809" />
         </div>
         <div className={styles.homeContentCopy}>
-          <p>I am a quirky, adventurous, and free spirited  empath. I desire to leave the biggest impact I can. As a designer, entrepreneur, and visionary studying Experience Design at the VCU Brandcenter, I am passionate about solving problems, removing barriers, creating meaningful solutions, and disrupting for good.</p>
-          <p>When I&#39;m not designing I&#39;m loving on these sweet babies! Ask to see pictures of them in a sock, you&#39;ll never see anything cuter. On a weekend, you&#39;ll typically find me soaking up time with my family and friends, playing board games, biking around Richmond (when it&#39;s warm), exploring new places to eat (current favorite is Goatacado), playing or teaching tennis, and surrounding myself with people that make me happy.</p>
+          <em className="quote">"Leave everything and everyone better than you found them. The rest will work itself out."</em>
+          <p>As a designer, entrepreneur, and empath studying Experience Design at the VCU Brandcenter, I am passionate about solving problems, removing barriers, creating meaningful solutions, and disrupting for good. Oh- and cute bunnies. Can&#39;t forget about the bunnies.</p>
 
           <div className={styles.actions}>
             <Link href="/about">
