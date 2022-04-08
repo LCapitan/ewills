@@ -16,8 +16,8 @@ const IntroContent = () => {
           <p>When I&#39;m not designing I&#39;m loving on these sweet babies! Ask to see pictures of them in a sock, you&#39;ll never see anything cuter. On a weekend, you&#39;ll typically find me soaking up time with my family and friends, playing board games, biking around Richmond (when it&#39;s warm), exploring new places to eat (current favorite is Goatacado), playing or teaching tennis, and surrounding myself with people that make me happy.</p>
 
           <div className={styles.actions}>
-            <Link href="/work">
-              see my work
+            <Link href="/about">
+              more about me
             </Link>
           </div>
         </div>
