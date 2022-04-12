@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import classnames from "classnames";
 import Link from 'next/link';
 
 import { useRef, useState, useEffect } from "react";
@@ -24,7 +25,7 @@ const CSHero: React.FC<CSHeroProps> = ({
         <VideoPlayer vidSrc={vidSrc} vidCover={vidCover} />
       }
       {imgSrc &&
-        <div className={styles.inner}>
+        <div className={styles.innerImg}>
           <Image src={imgSrc} width="1200" height="662" alt="" layout="responsive" />
         </div>
       }

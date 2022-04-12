@@ -18,4 +18,14 @@
       content: '';
     }
   }
+
+  .innerImg {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    &:after {
+      display: none;
+    }
+  }
 }

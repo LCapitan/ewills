@@ -32,7 +32,7 @@ const FeaturedWork = () => {
           <WorkCard
             imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649263364/honsbuns_hxjmxq.jpg"
             imgAlt="an illustration of beautiful bunny"
-            cardLink="/work/eve"
+            cardLink="/work/honsbuns"
             title="hon's buns"
             content="The baddest bunny-themed NFTs on the scene"
             tags={[

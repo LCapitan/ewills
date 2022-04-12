@@ -6,7 +6,8 @@ import {
   CSHeader,
   ContentBlock,
   FullWidthImage,
-  TwoColImg
+  TwoColImg,
+  VideoPlayer
 } from '../../../components/index';
 
 import styles from '../CaseStudy.module.scss';
@@ -14,7 +15,7 @@ import styles from '../CaseStudy.module.scss';
 const EveContent = () => {
   return (
     <div className={styles.csWrapper}>
-      <CSHero vidSrc='/assets/video/Eve-Video.mp4' />
+      <CSHero imgSrc='https://res.cloudinary.com/austinmel/image/upload/v1648708811/eve-banner_lx5jjs.jpg' />
 
       <CSHeader
         title='eve'
@@ -93,7 +94,7 @@ const EveContent = () => {
         imgAlt=''
       />
 
-      <TwoColImg
+      {/* <TwoColImg
         weird
         imgSrc="/assets/img/onboarding.gif"
         imgAlt=""
@@ -104,7 +105,7 @@ const EveContent = () => {
           <li>Messaging has a friendly and empathetic tone.</li>
           <li>Sustainable focus across messaging, visuals, and illustrations</li>
         </ul>
-      </TwoColImg>
+      </TwoColImg> */}
 
       <TwoColImg
         flipped
@@ -180,6 +181,10 @@ const EveContent = () => {
 
         <p>Eve is one of the few companies to offer a free option for EOL planning, promoting accessibility for all users.</p>
       </TwoColImg>
+
+      <div className={styles.vidWrapper}>
+        <VideoPlayer vidSrc='/assets/video/Eve-Video.mp4' />
+      </div>
 
       {/* <ContentBlock title='reflections' subtitle='Death Doula platform push for greener burial practices while also encouraging people to plan for end-of-life sooner?'>
         <p>I&#39;m baby chambray raclette distillery semiotics, taiyaki portland gluten-free art party. Plaid salvia hoodie, keytar asymmetrical 3 wolf moon DIY actually bespoke fashion axe irony austin twee. Artisan narwhal jean shorts fingerstache prism, snackwave taiyaki pug squid tofu. Readymade schlitz banh mi tumblr enamel pin, deep v vinyl farm-to-table venmo cred hell of.</p>
