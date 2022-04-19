@@ -36,7 +36,7 @@ const EveContent = () => {
       <div className={styles.divider}></div>
 
       <ContentBlock title="background">
-        <p>Death is a taboo subject, especially in American culture despite that we all will inevitablely face it one day. Adding a global pandemic into the mix has made our mortality part of daily life and only heightened our fears as a society. There is a need now more than ever to destigmatize death and normalize the conversations and planning surrounding it for the sake of ourselves and our loved ones.</p>
+        <p>Death is a taboo subject, especially in American culture despite that we all will inevitably face it one day. Adding a global pandemic into the mix has made our mortality part of daily life and only heightened our fears as a society. There is a need now more than ever to destigmatize death and normalize the conversations and planning surrounding it for the sake of ourselves and our loved ones.</p>
 
         <p>Additionally, the way we practice death is unsustainable. Traditional burial practices take up usable land along with leaving detrimental impacts to our environment. As people become aware of the ways our behaviors negatively effect the environment, our traditions surrounding death need to change. </p>
       </ContentBlock>
