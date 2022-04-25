@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Home | Emily Wills</title>
         <meta name="description" content="Emily Wills is an experience designer, entrepreneur, and empath from Virginia, US." />
-        <meta property="og:url" content="https://www.honsbuns.com/" />
+        <meta property="og:url" content="https://www.emilywills.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Home | Emily Wills" />
         <meta property="og:description" content="This page will allow you to link your Discord account to your MetaMask Wallet for WL and other future features." />
