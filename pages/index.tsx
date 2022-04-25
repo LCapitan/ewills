@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <NextSeo
         title="Home | Emily Wills"
         description="Emily Wills is an experience designer, entrepreneur, and empath from Virginia, US."
-        defaultTitle="Welcome to Hon's Buns"
+        defaultTitle="Welcome to Emily Wills' Portfolio"
         canonical="https://www.emilywills.com/"
         openGraph={{
           url: 'https://www.emilywills.com/',
