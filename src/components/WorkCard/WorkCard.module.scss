@@ -88,7 +88,7 @@
 
     @include md-max {
       h2 {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
       }
 
       .popUp {
@@ -130,6 +130,16 @@
     .tags {
       span {
         background: rgba($sand, 0.3);
+      }
+    }
+  }
+
+  @include md-max {
+
+    &:hover,
+    &:focus {
+      h2 {
+        animation: none !important;
       }
     }
   }
