@@ -10,8 +10,14 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.inner}>
-          <div className={styles.nameMark}>
-            emily<span>wills</span>
+          <div className={styles.nameContact}>
+            <div className={styles.nameMark}>
+              emily<span>wills</span>
+            </div>
+            <div className={styles.contact}>
+              <div><span>phone: 8043856474</span></div>
+              <div><span>email:</span> <a href="mailto:willsee@vcu.edu">willsee@vcu.edu</a></div>
+            </div>
           </div>
 
           <ul className={styles.sitemap}>

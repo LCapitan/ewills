@@ -13,13 +13,50 @@
     align-items: center;
   }
 
+  .nameContact {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 75px;
+
+    .contact {
+      color: $creme;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 45px;
+
+      span {
+        display: inline-block;
+        opacity: .25;
+      }
+
+      a {
+        color: $creme;
+        margin: 2px 0;
+        opacity: .25;
+        transition: .25s ease;
+
+        &:hover,
+        &:focus {
+          opacity: 1;
+        }
+      }
+    }
+
+    @include sm-max {
+      flex-direction: column;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+  }
+
   .nameMark {
     color: $creme;
     font-family: $title;
     font-size: 25px;
     font-weight: bold;
     line-height: 1;
-    margin-bottom: 75px;
     opacity: .25;
 
     span {

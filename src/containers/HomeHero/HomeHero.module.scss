@@ -33,7 +33,7 @@
       font-size: 8rem;
     }
 
-    @include sm-max {
+    @include md-max {
       font-size: 6rem;
       text-align: center;
     }
