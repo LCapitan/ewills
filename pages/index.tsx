@@ -31,6 +31,7 @@ const Home: NextPage = () => {
       //   cardType: 'summary_large_image',
       // }}
       />
+
       <main className="container">
         <HomeHero />
         <IntroContent />
