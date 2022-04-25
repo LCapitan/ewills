@@ -17,6 +17,11 @@
     font-size: 7rem;
     line-height: 1;
     margin: 0 0 50px;
+
+    @include md-max {
+      font-size: 55px;
+      margin: 0 0 25px;
+    }
   }
 
   .inner {
