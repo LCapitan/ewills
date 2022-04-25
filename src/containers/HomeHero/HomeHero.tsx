@@ -9,7 +9,7 @@ const HomeHero = () => {
     <div className={styles.hero}>
       <div className={styles.heroContent}>
         <div className={styles.namePhoto}>
-          <div>
+          <div className={styles.content}>
             <span className={styles.intro}>hello, my name is</span>
             <h1>emily<span>wills</span></h1>
           </div>

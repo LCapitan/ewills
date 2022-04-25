@@ -5,6 +5,10 @@
   padding: 0 0 100px;
   position: relative;
 
+  @include md-max {
+    padding: 100px 0 50p;
+  }
+
   h1 {
     font-family: $title;
     font-size: 12rem;
@@ -22,12 +26,21 @@
     gap: 75px;
     position: relative;
     z-index: 2;
+
+    @include md-max {
+      flex-direction: column;
+    }
   }
 
   .image {
     border-radius: 10px;
     overflow: hidden;
-    width: 450px;
+    flex: 1;
+    max-width: 450px;
+
+    @include md-max {
+      width: 100%;
+    }
   }
 
   .homeContentCopy {

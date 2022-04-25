@@ -6,6 +6,14 @@
   max-width: 1200px;
   padding: 0 125px;
   width: 100%;
+
+  @include md-max {
+    padding: 0 50px;
+  }
+
+  @include sm-max {
+    padding: 0 40px;
+  }
 }
 
 .menu {
@@ -30,6 +38,10 @@
     width: 100%;
 
     li {
+      @include sm-max {
+        text-align: right;
+      }
+
       a {
         color: $creme;
         font-family: $title;
@@ -44,6 +56,15 @@
         &:focus {
           font-size: 12rem;
           opacity: 1;
+        }
+
+        @include sm-max {
+
+          &:hover,
+          &:focus {
+            font-size: 4rem;
+            opacity: 0.5;
+          }
         }
       }
     }

@@ -8,6 +8,10 @@
   width: 100%;
   z-index: 99;
 
+  @include md-max {
+    padding: 0 40px;
+  }
+
   .nameMark {
     color: $sand;
     font-family: $title;
@@ -25,6 +29,10 @@
     &:focus {
       opacity: 1;
     }
+
+    @include lg-max {
+      display: none;
+    }
   }
 
   .innerWrapper {
@@ -35,6 +43,10 @@
   .leftSide,
   .rightSide {
     position: fixed;
+
+    @include lg-max {
+      display: none;
+    }
   }
 
   .leftSide {

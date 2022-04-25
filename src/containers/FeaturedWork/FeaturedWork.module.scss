@@ -5,6 +5,10 @@
   padding: 150px 0;
   position: relative;
 
+  @include md-max {
+    padding: 100px 0;
+  }
+
   h1 {
     color: $sand;
     font-family: $copy;
@@ -14,6 +18,11 @@
     opacity: 1;
     position: relative;
     text-align: center;
+
+    @include md-max {
+      font-size: 35px;
+      margin: 0 0 50px;
+    }
   }
 
   .workList {
@@ -29,6 +38,15 @@
       border-radius: 15px;
       width: calc(50% - 35px);
       box-shadow: 0px 10px 30px rgba($sand, 0.5);
+    }
+
+    @include md-max {
+      flex-direction: column;
+      margin: 0;
+
+      li {
+        width: 100%;
+      }
     }
   }
 

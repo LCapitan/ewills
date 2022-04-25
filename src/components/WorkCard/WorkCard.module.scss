@@ -26,6 +26,16 @@
     transition: .25s ease;
   }
 
+  @include md-max {
+    &:after {
+      opacity: 0.85;
+      width: 175%;
+      height: 175%;
+      transition: .35s ease-in-out;
+      transition-delay: .1s;
+    }
+  }
+
   .content {
     color: $creme;
     padding: 30px;
@@ -69,6 +79,27 @@
         font-size: 14px;
         padding: 8px 20px;
         transition: .35s ease-in-out;
+      }
+
+      @include sm-max {
+        display: none;
+      }
+    }
+
+    @include md-max {
+      h2 {
+        margin-bottom: 25px;
+      }
+
+      .popUp {
+        max-height: none;
+        opacity: 1;
+      }
+
+      .tags {
+        span {
+          background: rgba($sand, 0.3);
+        }
       }
     }
   }

@@ -49,8 +49,17 @@
     margin: 0;
     padding: 0 0 50px;
 
+    @include sm-max {
+      flex-direction: column;
+    }
+
     li {
       margin: 0 15px;
+
+      @include sm-max {
+        margin: 5px 0;
+        text-align: center;
+      }
 
       span {
         color: $creme;

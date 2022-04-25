@@ -9,7 +9,7 @@ const IntroContent = () => {
     <div className={styles.introContent}>
       <div className={styles.inner}>
         <div className={styles.image}>
-          <Image src="https://res.cloudinary.com/austinmel/image/upload/v1648668905/emily-bunny_1_dk3gf0.png" alt="hon's buns nft image" layout="responsive" width="584" height="809" />
+          <Image src="https://res.cloudinary.com/austinmel/image/upload/v1648668905/emily-bunny_1_dk3gf0.png" alt="image of Emily with her pet bunny" layout="responsive" width="584" height="809" />
         </div>
         <div className={styles.homeContentCopy}>
           <em className="quote">"Leave everything and everyone better than you found them. The rest will work itself out."</em>
