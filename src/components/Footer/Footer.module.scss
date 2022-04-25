@@ -48,6 +48,12 @@
       flex-direction: column;
       gap: 50px;
       margin-bottom: 50px;
+
+      .contact {
+        >div {
+          text-align: center;
+        }
+      }
     }
   }
 
