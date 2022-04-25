@@ -35,11 +35,11 @@ const Footer = () => {
                 <span>fun</span>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/" passHref>
                 <span>contact</span>
               </Link>
-            </li>
+            </li> */}
           </ul>
 
           <ul className={styles.socialMenu}>
