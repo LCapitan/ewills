@@ -11,6 +11,14 @@
     overflow: hidden;
     flex: 1;
   }
+
+  @include lg-max {
+    margin: 15px 0;
+  }
+
+  @include md-max {
+    flex-direction: column;
+  }
 }
 
 .imageContent {
@@ -19,14 +27,26 @@
   gap: 50px;
   margin: 150px 0 150px;
 
+  @include lg-max {
+    margin: 0;
+  }
+
   .image {
     border-radius: 10px;
     overflow: hidden;
     flex: 1;
+
+    @include lg-max {
+      width: 100%;
+    }
   }
 
   .content {
     width: 400px;
+
+    @include lg-max {
+      width: 100%;
+    }
 
     h3 {
       color: $pink;
@@ -41,7 +61,25 @@
     }
   }
 
+  @include lg-max {
+    flex-direction: column;
+    gap: 15px;
+
+    .image {
+      width: 100%;
+    }
+  }
+
   &.flipped {
     flex-direction: row-reverse;
+
+    @include lg-max {
+      flex-direction: column;
+      gap: 15px;
+
+      .image {
+        width: 100%;
+      }
+    }
   }
 }

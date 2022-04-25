@@ -6,6 +6,10 @@
   align-items: flex-start;
   margin: 100px auto;
 
+  @include md-max {
+    flex-direction: column;
+  }
+
   h2 {
     color: $pink;
     font-family: $copy;
@@ -28,6 +32,14 @@
       width: 60px;
       height: 1px;
     }
+
+    @include md-max {
+      text-align: left;
+
+      &:after {
+        display: none;
+      }
+    }
   }
 
   h3 {
@@ -42,6 +54,10 @@
     color: $sand;
     flex: 1;
     padding: 0 50px 0 50px;
+
+    @include md-max {
+      padding: 0;
+    }
   }
 
   p {

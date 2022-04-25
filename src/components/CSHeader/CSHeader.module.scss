@@ -6,6 +6,11 @@
   margin: 75px 0;
   gap: 100px;
 
+  @include md-max {
+    flex-direction: column;
+    gap: 50px;
+  }
+
   h1 {
     color: $pink;
     font-family: $title;
@@ -51,12 +56,23 @@
     .rightRailItem {
       color: $sand;
       margin-bottom: 50px;
+      font-size: 18px;
+      line-height: 28px;
 
       span {
         display: block;
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 10px;
+      }
+    }
+
+    @include md-max {
+      margin-top: 15px;
+      width: 100%;
+
+      .rightRailItem {
+        margin-bottom: 25px;
       }
     }
   }
