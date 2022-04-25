@@ -25,11 +25,11 @@ const Home: NextPage = () => {
           ],
           site_name: 'EmilyWills',
         }}
-      // twitter={{
-      //   handle: '@honsbuns',
-      //   site: '@honsbuns',
-      //   cardType: 'summary_large_image',
-      // }}
+        twitter={{
+          handle: '@EmilyWills',
+          site: '@EmilyWills',
+          cardType: 'summary_large_image',
+        }}
       />
 
       <main className="container">
