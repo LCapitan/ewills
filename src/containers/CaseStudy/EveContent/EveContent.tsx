@@ -15,7 +15,7 @@ import styles from '../CaseStudy.module.scss';
 const EveContent = () => {
   return (
     <div className={styles.csWrapper}>
-      <CSHero imgSrc='https://res.cloudinary.com/austinmel/image/upload/v1648708811/eve-banner_lx5jjs.jpg' />
+      <CSHero imgSrc='https://res.cloudinary.com/austinmel/image/upload/v1651109678/rvabowls-banner_ib6iyo.png' />
 
       <CSHeader
         title='eve'

@@ -23,6 +23,46 @@
   position: relative;
   z-index: 2;
 
+  h2 {
+    color: $pink;
+    font-family: $copy;
+    font-size: 22px;
+    margin-top: 0;
+    margin-right: 20px;
+    text-align: right;
+    width: 175px;
+    position: relative;
+
+    &:after {
+      background: $sand;
+      content: '';
+      display: block;
+      opacity: .5;
+      position: absolute;
+      top: 20px;
+      right: -55px;
+      transform: rotate(-55deg);
+      width: 60px;
+      height: 1px;
+    }
+
+    @include md-max {
+      text-align: left;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  h3 {
+    color: $sand;
+    font-family: $copy;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+  }
+
   .image {
     border-radius: 10px;
     flex: 1;
@@ -65,6 +105,46 @@
   gap: 75px;
   position: relative;
   z-index: 2;
+
+  h2 {
+    color: $pink;
+    font-family: $copy;
+    font-size: 22px;
+    margin-top: 0;
+    margin-right: 20px;
+    text-align: right;
+    width: 175px;
+    position: relative;
+
+    &:after {
+      background: $sand;
+      content: '';
+      display: block;
+      opacity: .5;
+      position: absolute;
+      top: 20px;
+      right: -55px;
+      transform: rotate(-55deg);
+      width: 60px;
+      height: 1px;
+    }
+
+    @include md-max {
+      text-align: left;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  h3 {
+    color: $sand;
+    font-family: $copy;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+  }
 
   .image {
     border-radius: 10px;
