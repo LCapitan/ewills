@@ -23,8 +23,8 @@ const RvaBowlsContent = () => {
           'ui/ux',
           'branding',
           'strategy',
+          'web design',
           'product design',
-          'website redesign',
         ]}
         forWhat='Student Project 2020'
         timeline='8 weeks'
