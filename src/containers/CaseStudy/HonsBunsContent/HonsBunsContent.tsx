@@ -45,7 +45,7 @@ const HonsBunsContent = () => {
           <Image src="https://res.cloudinary.com/austinmel/image/upload/v1651105773/emily-bunnies_gwplge.png" alt="image of emily with her bunnies" layout="responsive" width="522" height="530" />
         </div>
         <div className={styles.homeContentCopy}>
-          <p>I was once the mom of 14 bunnies. Yes, you read that correctly. And no I did not plan for it, though through unique circumstances the bunny life chose me. While it was certainly unexpected, raising these bunnies has been one of life's greatest joys of my life.</p>
+          <p>I was once the mom of 14 bunnies. Yes, you read that correctly. And no I did not plan for it, though through unique circumstances the bunny life chose me. While it was certainly unexpected, raising these bunnies has been one of life's greatest joys and brought me a great deal of happiness.</p>
         </div>
       </div>
 
@@ -54,7 +54,7 @@ const HonsBunsContent = () => {
           <Image src="https://res.cloudinary.com/austinmel/image/upload/v1651105963/bunny_fmaezv.png" alt="image of one of emily's bunnies" layout="responsive" width="522" height="530" />
         </div>
         <div className={styles.homeContentCopy}>
-          <p>Bunnies are unique creatures and very different from one another. From their genetic makeup to their treat preferences to their personalities- no two of them are alike. Just like other pets, losing one is difficult especially after you've watched them grow and developed such a close bond.</p>
+          <p>Bunnies are unique creatures and very different from one another. From their genetic makeup to their treat preferences to their personalities- no two of them are alike! Just like other pets, losing one can be difficult especially after you've developed such a close bond with them. You consider them family.</p>
         </div>
       </div>
 
