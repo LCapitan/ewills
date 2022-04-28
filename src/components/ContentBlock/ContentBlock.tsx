@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import cx from "classnames";
 
 import styles from './ContentBlock.module.scss'
 
 interface ContentBlockProps {
-  title: string,
+  title?: string,
   subtitle?: string
   children?: any
 }
@@ -15,8 +16,8 @@ const ContentBlock: React.FC<ContentBlockProps> = ({
   children
 }) => {
   return (
-    <div className={styles.contentBlock}>
-      <h2>{title}</h2>
+    <div className={cx(styles.contentBlock, !title && styles.noTitle)}>
+      {title && <h2>{title}</h2>}
       <div className={styles.content}>
         <h3>{subtitle}</h3>
         {children}
