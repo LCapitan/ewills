@@ -6,10 +6,10 @@ interface CaseStudyHeaderProps {
   title: string,
   tags: Array<string>,
   children: any,
-  forWhat: string,
-  timeline: string,
-  tools: string,
-  role: string
+  forWhat?: string,
+  timeline?: string,
+  tools?: string,
+  role?: string
 }
 
 const CaseStudyHeader: React.FC<CaseStudyHeaderProps> = ({
@@ -40,24 +40,26 @@ const CaseStudyHeader: React.FC<CaseStudyHeaderProps> = ({
         </div>
       </div>
 
-      <div className={styles.rightRail}>
-        <div className={styles.rightRailItem}>
-          <span>For</span>
-          {forWhat}
+      {forWhat && (
+        <div className={styles.rightRail}>
+          <div className={styles.rightRailItem}>
+            <span>For</span>
+            {forWhat}
+          </div>
+          <div className={styles.rightRailItem}>
+            <span>Timeline</span>
+            {timeline}
+          </div>
+          <div className={styles.rightRailItem}>
+            <span>Tools</span>
+            {tools}
+          </div>
+          <div className={styles.rightRailItem}>
+            <span>Role</span>
+            {role}
+          </div>
         </div>
-        <div className={styles.rightRailItem}>
-          <span>Timeline</span>
-          {timeline}
-        </div>
-        <div className={styles.rightRailItem}>
-          <span>Tools</span>
-          {tools}
-        </div>
-        <div className={styles.rightRailItem}>
-          <span>Role</span>
-          {role}
-        </div>
-      </div>
+      )}
     </div>
   )
 }

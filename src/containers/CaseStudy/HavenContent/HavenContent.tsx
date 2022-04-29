@@ -26,11 +26,7 @@ const HavenContent = () => {
             'branding',
             'strategy',
             'wearables'
-          ]}
-          forWhat='Passion Project'
-          timeline='8 weeks'
-          tools='Figma, Illustrator, Procreate'
-          role='User Research, UX/UI, Branding, Social Media'>
+          ]}>
           <p>Creating wearable technology that provides personal safety for young women </p>
         </CSHeader>
 
