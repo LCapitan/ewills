@@ -13,10 +13,11 @@
 
   .workCta {
     display: none;
+    margin-bottom: 25px;
 
     span {
       color: $sand;
-      display: block;
+      display: inline-block;
       font-family: $copy;
       font-weight: bold;
       font-size: 18px;
@@ -29,14 +30,24 @@
         left: 0;
         transform: translateY(-50%);
         width: 35px;
+        transition: .25s;
 
         path {
           stroke: $sand;
         }
       }
+
+      &:hover,
+      &:focus {
+        cursor: pointer;
+
+        svg {
+          left: -15px;
+        }
+      }
     }
 
-    @include md-max {
+    @include lg-max {
       display: block;
     }
   }
@@ -49,7 +60,7 @@
     margin: 0 0 50px;
 
     @include md-max {
-      font-size: 55px;
+      font-size: 75px;
       margin: 0 0 25px;
     }
   }
