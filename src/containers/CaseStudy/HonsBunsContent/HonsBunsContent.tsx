@@ -29,9 +29,9 @@ const HonsBunsContent = () => {
             'web3'
           ]}
           forWhat='Passion Project'
-          timeline='8 weeks'
-          tools='Figma, Illustrator, Procreate'
-          role='User Research, UX/UI, Branding, Social Media'>
+          timeline='10 weeks'
+          tools='Figma'
+          role='UX/UI, Branding, Social Media'>
           <p>A collection of 10,000 unique, bunny-themed, NFTs, minting on Ethereum.</p>
         </CSHeader>
 
