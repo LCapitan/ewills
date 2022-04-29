@@ -61,7 +61,7 @@ const RvaBowlsContent = () => {
         </ContentBlock>
 
         <FullWidthImage
-          imgSrc='https://res.cloudinary.com/austinmel/image/upload/v1651119580/start-ordering_yded0c.png'
+          imgSrc='/assets/img/rvabowls-animation.gif'
           imgAlt=''
         />
 
@@ -77,7 +77,7 @@ const RvaBowlsContent = () => {
 
         <div className={styles.contentWrapperFlipped}>
           <div className={styles.image}>
-            <Image src="https://res.cloudinary.com/austinmel/image/upload/v1651120228/instructions_gmpmp1.png" alt="image of one of emily's bunnies" layout="responsive" width="522" height="530" />
+            <Image src="https://res.cloudinary.com/austinmel/image/upload/v1651120228/instructions_gmpmp1.png" alt="" layout="responsive" width="522" height="530" />
           </div>
           <div className={styles.homeContentCopy}>
             <h3>instructions screen</h3>
@@ -87,7 +87,7 @@ const RvaBowlsContent = () => {
 
         <div className={styles.contentWrapper}>
           <div className={styles.image}>
-            <Image src="https://res.cloudinary.com/austinmel/image/upload/v1651120353/select-base_ogvnig.png" alt="image of one of emily's bunnies" layout="responsive" width="522" height="530" />
+            <Image src="https://res.cloudinary.com/austinmel/image/upload/v1651120353/select-base_ogvnig.png" alt="" layout="responsive" width="522" height="530" />
           </div>
           <div className={styles.homeContentCopy}>
             <h3>select your base</h3>
@@ -97,7 +97,7 @@ const RvaBowlsContent = () => {
 
         <div className={styles.contentWrapperFlipped}>
           <div className={styles.image}>
-            <Image src="https://res.cloudinary.com/austinmel/image/upload/v1651120556/toppings_lh5vfe.png" alt="image of one of emily's bunnies" layout="responsive" width="522" height="530" />
+            <Image src="https://res.cloudinary.com/austinmel/image/upload/v1651120556/toppings_lh5vfe.png" alt="" layout="responsive" width="522" height="530" />
           </div>
           <div className={styles.homeContentCopy}>
             <h3>adorn with toppings</h3>
@@ -107,7 +107,7 @@ const RvaBowlsContent = () => {
 
         <div className={styles.contentWrapper}>
           <div className={styles.image}>
-            <Image src="https://res.cloudinary.com/austinmel/image/upload/v1651120639/drizzle_xwftnt.png" alt="image of one of emily's bunnies" layout="responsive" width="522" height="530" />
+            <Image src="https://res.cloudinary.com/austinmel/image/upload/v1651120639/drizzle_xwftnt.png" alt="" layout="responsive" width="522" height="530" />
           </div>
           <div className={styles.homeContentCopy}>
             <h3>embellish with drizzle</h3>
@@ -115,10 +115,9 @@ const RvaBowlsContent = () => {
           </div>
         </div>
 
-        <FullWidthImage
-          imgSrc='https://res.cloudinary.com/austinmel/image/upload/v1651120816/viewports_xxx2tc.png'
-          imgAlt=''
-        />
+        <div className={styles.fullWidthImage}>
+          <Image src='/assets/img/digital-touchpoints.gif' width="1522" height="924" alt='a video walkthrough of the rva bowls website design' layout="responsive" />
+        </div>
 
         <ContentBlock title='03' subtitle='A physical experience that fosters connection with eachother while giving back to the local RVA community'>
         </ContentBlock>
@@ -135,7 +134,7 @@ const RvaBowlsContent = () => {
 
         <div className={styles.contentWrapperFlipped}>
           <div className={styles.image}>
-            <Image src="https://res.cloudinary.com/austinmel/image/upload/v1651121754/laptop_t8sxmu.png" alt="image of emily with her bunnies" layout="responsive" width="522" height="530" />
+            <Image src="/assets/img/bowlsgiveback.gif" alt="image of emily with her bunnies" layout="responsive" width="522" height="530" />
           </div>
 
           <div className={styles.homeContentCopy}>
