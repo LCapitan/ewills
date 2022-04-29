@@ -17,7 +17,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({
 }) => {
   return (
     <div className={cx(styles.contentBlock, !title && styles.noTitle)}>
-      {title && <h2>{title}</h2>}
+      {title && <h2 className={styles.blockHeading}>{title}</h2>}
       <div className={styles.content}>
         <h3>{subtitle}</h3>
         {children}

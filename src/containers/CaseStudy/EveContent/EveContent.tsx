@@ -183,7 +183,7 @@ const EveContent = () => {
       </TwoColImg>
 
       <div className={styles.vidWrapper}>
-        <VideoPlayer vidSrc='/assets/video/Eve-Video.mp4' />
+        <VideoPlayer vidSrc='https://res.cloudinary.com/austinmel/video/upload/v1651202379/Eve-Video_nsbzbr.mp4' />
       </div>
 
       {/* <ContentBlock title='reflections' subtitle='Death Doula platform push for greener burial practices while also encouraging people to plan for end-of-life sooner?'>
