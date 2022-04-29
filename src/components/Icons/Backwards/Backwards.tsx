@@ -1,4 +1,4 @@
-const Forward = () => {
+const Backwards = () => {
   return (
     <svg width="38" height="41" viewBox="0 0 38 41" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fillRule="evenodd" clipRule="evenodd" d="M36 39L9 20.5L36 2L36 39ZM2 39L6 39L6 2L2 2L2 39Z" fill="black" />
@@ -7,4 +7,4 @@ const Forward = () => {
   )
 }
 
-export default Forward;
+export default Backwards;

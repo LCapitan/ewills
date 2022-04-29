@@ -1,3 +1,4 @@
+export * from "./Arrow";
 export * from "./Backwards";
 export * from "./Facebook";
 export * from "./Forward";

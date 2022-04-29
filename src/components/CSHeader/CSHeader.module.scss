@@ -11,6 +11,36 @@
     gap: 50px;
   }
 
+  .workCta {
+    display: none;
+
+    span {
+      color: $sand;
+      display: block;
+      font-family: $copy;
+      font-weight: bold;
+      font-size: 18px;
+      padding-left: 55px;
+      position: relative;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 35px;
+
+        path {
+          stroke: $sand;
+        }
+      }
+    }
+
+    @include md-max {
+      display: block;
+    }
+  }
+
   h1 {
     color: $pink;
     font-family: $title;

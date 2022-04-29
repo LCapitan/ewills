@@ -21,10 +21,10 @@ const FeaturedWork = () => {
             content="A digital platform that makes the journey for death more approachable and sustainable"
             tags={[
               'sustainability',
+              'human-centered design',
               'service design',
               'accessibility',
-              'machine learning',
-              'human-centered design'
+              'machine learning'
             ]}
           />
         </li>
@@ -36,12 +36,12 @@ const FeaturedWork = () => {
             title="hon's buns"
             content="The baddest bunny-themed NFTs on the scene"
             tags={[
-              'experience design',
+              'ui/ux',
               'branding',
               'strategy',
-              'accessibility',
-              'web3',
+              'design for good',
               'crypto',
+              'web3'
             ]}
           />
         </li>

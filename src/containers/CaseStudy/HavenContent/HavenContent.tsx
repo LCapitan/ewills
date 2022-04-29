@@ -14,47 +14,48 @@ import styles from '../CaseStudy.module.scss';
 
 const HavenContent = () => {
   return (
-    <div className={styles.csWrapper}>
+    <>
       <CSHero imgSrc='https://res.cloudinary.com/austinmel/image/upload/v1651200965/haven-banner_pmp7ty.jpg' />
 
-      <CSHeader
-        title="haven"
-        tags={[
-          'ui/ux',
-          'product design',
-          'branding',
-          'strategy',
-          'wearables'
-        ]}
-        forWhat='Passion Project'
-        timeline='8 weeks'
-        tools='Figma, Illustrator, Procreate'
-        role='User Research, UX/UI, Branding, Social Media'>
-        <p>Creating wearable technology that provides personal safety for young women </p>
-      </CSHeader>
+      <div className={styles.csWrapper}>
+        <CSHeader
+          title="haven"
+          tags={[
+            'ui/ux',
+            'product design',
+            'branding',
+            'strategy',
+            'wearables'
+          ]}
+          forWhat='Passion Project'
+          timeline='8 weeks'
+          tools='Figma, Illustrator, Procreate'
+          role='User Research, UX/UI, Branding, Social Media'>
+          <p>Creating wearable technology that provides personal safety for young women </p>
+        </CSHeader>
 
-      <div className={styles.divider}></div>
+        <div className={styles.divider}></div>
 
-      <ContentBlock>
-        <div className={styles.childHeading}>
-          <h2>Solution Overview</h2>
+        <ContentBlock>
+          <div className={styles.childHeading}>
+            <h2>Solution Overview</h2>
+          </div>
+
+          <p>This video is one that I made as an individual project for my visual storytelling class. It sums up my passion for Haven and the reason behind why I founded the company, how it has developed over the years, and what I am looking for to continue pushing it forward.</p>
+
+          <p>I am currently working on a rebrand, so my full case study is not available yet for viewing here. However, feel free to ask me about it if you are interested and I’d be happy to share more in depth of what I’ve been working on! </p>
+        </ContentBlock >
+
+        <div className={styles.vidWrapper}>
+          <VideoPlayer vidSrc='https://res.cloudinary.com/austinmel/video/upload/v1651202258/haven-video_bh5umo.mov' />
         </div>
 
-        <p>This video is one that I made as an individual project for my visual storytelling class. It sums up my passion for Haven and the reason behind why I founded the company, how it has developed over the years, and what I am looking for to continue pushing it forward.</p>
-
-        <p>I am currently working on a rebrand, so my full case study is not available yet for viewing here. However, feel free to ask me about it if you are interested and I’d be happy to share more in depth of what I’ve been working on! </p>
-      </ContentBlock >
-
-      <div className={styles.vidWrapper}>
-        <VideoPlayer vidSrc='https://res.cloudinary.com/austinmel/video/upload/v1651202258/haven-video_bh5umo.mov' />
-      </div>
-
-      {/* <FullWidthImage
+        {/* <FullWidthImage
         imgSrc='https://res.cloudinary.com/austinmel/image/upload/v1651108444/branding_urpgh8.png'
         imgAlt=''
       /> */}
 
-      {/* <div className={styles.contentWrapperFlipped}>
+        {/* <div className={styles.contentWrapperFlipped}>
         <div className={styles.image}>
           <Image src="https://res.cloudinary.com/austinmel/image/upload/v1651108597/bunnies_icemtj.png" alt="image of emily with her bunnies" layout="responsive" width="522" height="530" />
         </div>
@@ -72,7 +73,8 @@ const HavenContent = () => {
           </div>
         </div>
       </div> */}
-    </div >
+      </div >
+    </>
   )
 }
 

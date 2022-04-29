@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import { Arrow } from '../Icons'
 import styles from './CSHeader.module.scss'
 
 interface CaseStudyHeaderProps {
@@ -22,6 +24,11 @@ const CaseStudyHeader: React.FC<CaseStudyHeaderProps> = ({
   return (
     <div className={styles.caseStudyHeader}>
       <div className={styles.inner}>
+        <div className={styles.workCta}>
+          <Link href="/work">
+            <span><Arrow /> work</span>
+          </Link>
+        </div>
         <h1>{title}</h1>
         <div className={styles.content}>
           {children}

@@ -28,4 +28,11 @@
       display: none;
     }
   }
+
+  @include sm-max {
+    margin-right: -40px;
+    margin-left: -40px;
+    margin-top: 0;
+    border-radius: 0;
+  }
 }
