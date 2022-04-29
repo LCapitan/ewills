@@ -2,7 +2,7 @@ import { useMediaQuery } from "@mantine/hooks";
 import Link from "next/link";
 import React, { useContext } from 'react';
 import UIContext from "../../context/UIContext";
-import { Instagram, Twitter, Facebook } from '../Icons'
+import { LinkedIn, Instagram, Twitter, Facebook } from '../Icons'
 import Menu from "../Menu/Menu";
 import Hamburger from './HamburgerButton';
 
@@ -19,6 +19,11 @@ const Header = () => {
       </Link>
       <div className={styles.rightSide}>
         <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/emilyewills/">
+              <LinkedIn />
+            </a>
+          </li>
           <li>
             <a href="https://www.instagram.com/emmmywills/">
               <Instagram />

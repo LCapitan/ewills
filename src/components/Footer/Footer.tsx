@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useContext } from 'react';
-import { Instagram, Twitter, Facebook } from '../Icons'
+import { LinkedIn, Instagram, Twitter, Facebook } from '../Icons'
 
 import styles from './Footer.module.scss'
 
@@ -49,6 +49,11 @@ const Footer = () => {
           </ul>
 
           <ul className={styles.socialMenu}>
+            <li>
+              <a href="https://www.linkedin.com/in/emilyewills/">
+                <LinkedIn />
+              </a>
+            </li>
             <li>
               <a href="https://www.instagram.com/emmmywills/">
                 <Instagram />
