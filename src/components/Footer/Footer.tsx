@@ -36,11 +36,11 @@ const Footer = () => {
                 <span>work</span>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/" passHref>
                 <span>fun</span>
               </Link>
-            </li>
+            </li> */}
             {/* <li>
               <Link href="/" passHref>
                 <span>contact</span>

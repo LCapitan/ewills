@@ -2,11 +2,11 @@
 @import "../../../styles/breakpoints.scss";
 
 .introContent {
-  padding: 0 0 100px;
+  padding: 150px 0 100px;
   position: relative;
 
   @include md-max {
-    padding: 100px 0 50p;
+    padding: 50px 0;
   }
 
   h1 {
