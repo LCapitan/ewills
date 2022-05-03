@@ -71,7 +71,7 @@ const RvaBowlsContent = () => {
           </div>
           <div className={styles.homeContentCopy}>
             <h3>start creating</h3>
-            <p>I was once the mom of 14 bunnies. Yes, you read that correctly. And no I did not plan for it, though through unique circumstances the bunny life chose me. While it was certainly unexpected, raising these bunnies has been one of life's greatest joys of my life.</p>
+            <p>Upon walking into the restaurant, customers are met with this interactive screen which encourages them to start creating their perfect bowl of goodness.</p>
           </div>
         </div>
 

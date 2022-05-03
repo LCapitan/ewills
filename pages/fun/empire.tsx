@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import { NoContent } from '../../src/containers/';
+import { NoContent } from '../../src/containers';
 
 import styles from '../../styles/Work.module.scss';
 
