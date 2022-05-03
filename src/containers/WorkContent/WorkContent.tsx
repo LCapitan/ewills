@@ -81,7 +81,7 @@ const WorkContent = () => {
             ]}
           />
         </li>
-        <li>
+        {/* <li>
           <WorkCard
             imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649404790/cairo_ratyrd.png"
             imgAlt="a photo of the Cairo Olympics logo prototype"
@@ -96,8 +96,8 @@ const WorkContent = () => {
               'sustainability'
             ]}
           />
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <WorkCard
             imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649404956/3m_ogowpq.png"
             imgAlt="a photo of 3M creating their post it note mural"
@@ -111,7 +111,7 @@ const WorkContent = () => {
               'experience design'
             ]}
           />
-        </li>
+        </li> */}
       </ul>
     </div>
   );
