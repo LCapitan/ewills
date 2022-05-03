@@ -83,20 +83,6 @@ const WorkContent = () => {
         </li>
         <li>
           <WorkCard
-            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649405756/IMG_3115_doe4qp.jpg"
-            imgAlt="a photo of a piece of a homemade peanut butter and chocolate toast"
-            cardLink="/work/toast"
-            title="totally toast"
-            content="a passion project centered around my love for toast"
-            tags={[
-              'branding',
-              'product design',
-              'experience design'
-            ]}
-          />
-        </li>
-        <li>
-          <WorkCard
             imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649404790/cairo_ratyrd.png"
             imgAlt="a photo of the Cairo Olympics logo prototype"
             cardLink="/work/cairo"
@@ -123,21 +109,6 @@ const WorkContent = () => {
               'product design',
               '3D',
               'experience design'
-            ]}
-          />
-        </li>
-        <li>
-          <WorkCard
-            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649405098/Empire_Designs_edit_copy_uj6qvu.jpg"
-            imgAlt="a photo of Empire Designs Jean Shorts by Emily Wills"
-            cardLink="/work/empire"
-            title="empire designs"
-            content="a handcrafted highwaisted shorts company"
-            tags={[
-              'branding',
-              'product design',
-              'fashion',
-              'social strategy'
             ]}
           />
         </li>

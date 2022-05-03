@@ -19,7 +19,7 @@ const FunContent = () => {
           <WorkCard
             imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649405756/IMG_3115_doe4qp.jpg"
             imgAlt="a photo of a piece of a homemade peanut butter and chocolate toast"
-            cardLink="/work/toast"
+            cardLink="/fun/toast"
             title="totally toast"
             content="a passion project centered around my love for toast"
             tags={[
@@ -33,7 +33,7 @@ const FunContent = () => {
           <WorkCard
             imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649405098/Empire_Designs_edit_copy_uj6qvu.jpg"
             imgAlt="a photo of Empire Designs Jean Shorts by Emily Wills"
-            cardLink="/work/empire"
+            cardLink="/fun/empire"
             title="empire designs"
             content="a handcrafted highwaisted shorts company"
             tags={[
