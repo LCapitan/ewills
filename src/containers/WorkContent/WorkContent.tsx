@@ -81,6 +81,20 @@ const WorkContent = () => {
             ]}
           />
         </li>
+        <li>
+          <WorkCard
+            imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649405756/IMG_3115_doe4qp.jpg"
+            imgAlt="a photo of a piece of a homemade peanut butter and chocolate toast"
+            cardLink="/work/toast"
+            title="totally toast"
+            content="a passion project centered around my love for toast"
+            tags={[
+              'branding',
+              'product design',
+              'photography'
+            ]}
+          />
+        </li>
         {/* <li>
           <WorkCard
             imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649404790/cairo_ratyrd.png"
@@ -97,7 +111,7 @@ const WorkContent = () => {
             ]}
           />
         </li> */}
-        {/* <li>
+        <li>
           <WorkCard
             imgSrc="https://res.cloudinary.com/austinmel/image/upload/v1649404956/3m_ogowpq.png"
             imgAlt="a photo of 3M creating their post it note mural"
@@ -106,12 +120,10 @@ const WorkContent = () => {
             content="3M partners with twin cities pride festival"
             tags={[
               'ui/ux',
-              'product design',
-              '3D',
-              'experience design'
+              'environmental design'
             ]}
           />
-        </li> */}
+        </li>
       </ul>
     </div>
   );

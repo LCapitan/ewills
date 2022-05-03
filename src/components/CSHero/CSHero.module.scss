@@ -29,6 +29,10 @@
     }
   }
 
+  @include lg-min {
+    margin-top: 7%;
+  }
+
   @include sm-max {
     margin-right: -40px;
     margin-left: -40px;
