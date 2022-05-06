@@ -15,7 +15,7 @@ import styles from '../CaseStudy.module.scss';
 const HavenContent = () => {
   return (
     <>
-      <CSHero imgSrc='https://res.cloudinary.com/austinmel/image/upload/v1651610904/3m-banner_rke1ml.jpg' />
+      <CSHero imgSrc='https://res.cloudinary.com/austinmel/image/upload/v1651867850/PrideBooth_WallPrompt_yyqohf.jpg' />
 
       <div className={styles.csWrapper}>
         <CSHeader
@@ -83,6 +83,11 @@ const HavenContent = () => {
           imgAlt=''
         />
 
+        <FullWidthImage
+          imgSrc='https://res.cloudinary.com/austinmel/image/upload/v1651867847/PrideBooth_WallAlmostComplete_udz7zz.jpg'
+          imgAlt=''
+        />
+
         <ContentBlock title="03" subtitle='Post-it Pride Packs'>
           <p>To spread more love and joy during Pride, we provided Post-it Pride Packs to local bars and restaurants to display in their windows and show their support.</p>
         </ContentBlock>
@@ -91,6 +96,10 @@ const HavenContent = () => {
           imgSrc='https://res.cloudinary.com/austinmel/image/upload/v1651611459/3m-pride-7_i4yb7v.png'
           imgAlt=''
         />
+
+        <div className={styles.vidWrapper}>
+          <VideoPlayer vidSrc='https://res.cloudinary.com/austinmel/video/upload/v1651867177/3M_Pride_2022_e7ccqr.mov' />
+        </div>
       </div >
     </>
   )
