@@ -98,7 +98,7 @@ const HavenContent = () => {
         />
 
         <div className={styles.vidWrapper}>
-          <VideoPlayer vidSrc='https://res.cloudinary.com/austinmel/video/upload/v1651867177/3M_Pride_2022_e7ccqr.mov' />
+          <VideoPlayer vidSrc='https://res.cloudinary.com/austinmel/video/upload/v1652386827/3M_Pride_2022_Final_umsz9a.mov' />
         </div>
       </div >
     </>

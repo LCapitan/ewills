@@ -11,7 +11,7 @@ import styles from './Menu.module.scss'
 export default function Menu() {
   const { menuOpen, setMenuOpen } = useContext(UIContext);
   // const ref = useClickOutside(() => setMenuOpen(false));
-  console.log(menuOpen);
+  // console.log(menuOpen);
 
   return (
     <nav className={classnames(styles.menu, menuOpen && styles.open)}>
