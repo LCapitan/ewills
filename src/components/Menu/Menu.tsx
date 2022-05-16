@@ -29,9 +29,6 @@ export default function Menu() {
           {/* <li onClick={() => setMenuOpen(false)}>
             <Link href="/fun">fun</Link>
           </li> */}
-          {/* <li onClick={() => setMenuOpen(false)}>
-            <Link href="/contact">contact</Link>
-          </li> */}
         </ul>
       </div>
     </nav>
