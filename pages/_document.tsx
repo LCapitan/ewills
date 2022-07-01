@@ -4,7 +4,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html prefix="og: http://ogp.me/ns#">
         <Head></Head>
         <body>
           <Main />
