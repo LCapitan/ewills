@@ -21,7 +21,7 @@ const Home: NextPage = () => {
           title: "Emily's Portfolio",
           description: "Emily Wills is an experience designer, entrepreneur, and empath from Virginia, US.",
           images: [
-            { url: 'https://res.cloudinary.com/austinmel/image/upload/v1656678415/astro_iie61u.jpg' }
+            { url: 'https://emilywills.com/assets/img/em.png' }
           ],
           site_name: 'Emily Wills',
         }}

@@ -11,10 +11,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       <>
         <Head>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <meta property="og:image" content="https://res.cloudinary.com/austinmel/image/upload/v1656678415/astro_iie61u.jpg" />
-          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:image" content="https://emilywills.com/assets/img/em.png" />
+          <meta property="og:image:type" content="image/png" />
           <meta property="og:image:width" content="1400" />
-          <meta property="og:image:height" content="1400" />
+          <meta property="og:image:height" content="755" />
           <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <DefaultSeo
@@ -24,9 +24,9 @@ function MyApp({ Component, pageProps }: AppProps) {
             description: "Emily Wills is an experience designer, entrepreneur, and empath from Virginia, US.",
             images: [
               {
-                url: 'https://res.cloudinary.com/austinmel/image/upload/v1656678415/astro_iie61u.jpg',
+                url: 'https://emilywills.com/assets/img/em.png',
                 width: 1400,
-                height: 1400,
+                height: 755,
                 alt: 'Emily Wills and a Bunny',
                 type: 'image/jpeg',
               }
