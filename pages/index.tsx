@@ -18,7 +18,7 @@ const Home: NextPage = () => {
         canonical="https://www.emilywills.com/"
         openGraph={{
           url: 'https://www.emilywills.com/',
-          title: "Emily Wills' Portfolio",
+          title: "Emily's Portfolio",
           description: "Emily Wills is an experience designer, entrepreneur, and empath from Virginia, US.",
           images: [
             { url: 'https://res.cloudinary.com/austinmel/image/upload/v1656713095/em_xebnej.png' }

@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <>
           <Head>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <link rel="shortcut icon" href="/favicon.ico" />
           </Head>
           <DefaultSeo
             openGraph={{
@@ -21,9 +22,9 @@ function MyApp({ Component, pageProps }: AppProps) {
               description: "Emily Wills is an experience designer, entrepreneur, and empath from Virginia, US.",
               images: [
                 {
-                  url: 'https://res.cloudinary.com/austinmel/image/upload/v1656713095/em_xebnej.png',
+                  url: 'https://res.cloudinary.com/austinmel/image/upload/v1656678415/astro_iie61u.jpg',
                   width: 1400,
-                  height: 755,
+                  height: 1400,
                   alt: 'Emily Wills and a Bunny',
                   type: 'image/jpeg',
                 }
