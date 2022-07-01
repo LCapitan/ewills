@@ -6,7 +6,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link rel="shortcut icon" href="https://res.cloudinary.com/austinmel/image/upload/v1642232661/fav-64_hectu5.png"></link>
           <link rel="icon" type="image/png" href="https://res.cloudinary.com/austinmel/image/upload/v1642232661/fav-64_hectu5.png"></link>
           <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://res.cloudinary.com/austinmel/image/upload/v1642232193/favicon-144_my6if2.png"></link>
