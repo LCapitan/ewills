@@ -12,6 +12,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Head>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <meta property="og:image" content="https://res.cloudinary.com/austinmel/image/upload/v1656678415/astro_iie61u.jpg" />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:image:width" content="1400" />
+          <meta property="og:image:height" content="1400" />
           <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
         <DefaultSeo
