@@ -2,63 +2,115 @@
 @import "../../../styles/breakpoints.scss";
 
 .workContent {
-  padding: 100px 0 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 50px 0 30px;
   position: relative;
+  width: 100%;
 
-  .title {
-    width: 100%;
-    position: relative;
-    text-align: right;
+  @include lg-max {
+    padding: 100px 0;
+    display: block;
+  }
 
-    h1 {
+  .pageHeading {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 35%;
+    z-index: 2;
+
+    @include lg-max {
+      margin-bottom: 50px;
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translateY(0);
+      width: 100%;
+    }
+
+    .pageTitle {
+      color: $sand;
       font-family: $title;
-      font-size: 12rem;
+      font-size: 95px;
       line-height: 1;
-      margin: 0 0 100px;
-      opacity: 0.1;
+      margin: 0 0 25px;
 
-      @include vp-max(1400) {
-        font-size: 10rem;
+      @include lg-max {
+        font-size: 65px;
+      }
+    }
+
+    .subtitle {
+      color: $sand;
+      font-family: $copy;
+      font-size: 18px;
+      // font-weight: $light;
+      line-height: 32px;
+    }
+
+    .actions {
+      margin-top: 30px;
+
+      @include lg-max {
+        display: none;
       }
 
-      @include vp-max(1300) {
-        font-size: 8rem;
-        top: 0;
-      }
+      @include sm-max {
+        width: 100%;
 
-      @include vp-max(1200) {
-        font-size: 8rem;
+        :global {
+          a {
+            width: 100%;
+          }
+        }
       }
+    }
+  }
 
-      @include md-max {
-        color: $sand;
-        font-size: 55px;
-        margin-bottom: 50px;
-        opacity: 1;
-        position: relative;
-        text-align: left;
-        top: 0;
+  >.actions {
+    display: none;
+    margin-top: 30px;
+
+    @include lg-max {
+      display: block;
+    }
+
+    @include sm-max {
+      width: 100%;
+
+      :global {
+        a {
+          width: 100%;
+        }
       }
     }
   }
 
   .workList {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 35px;
     list-style-type: none;
-    // margin: 0 -35px -350px 0;
-    margin: 0 -35px 0 0;
+    margin: 0;
     padding: 0;
+    position: relative;
+    width: 50%;
+    z-index: 5;
+
+    @include lg-max {
+      gap: 35px;
+      margin: 0 -35px 0 0;
+      width: 100%;
+    }
 
     li {
       border-radius: 15px;
-      width: calc(50% - 35px);
+      width: 100%;
 
-      &:nth-child(odd) {
-        position: relative;
-        top: -300px;
+      @include lg-max {
+        width: calc(50% - 35px);
       }
     }
 
@@ -79,42 +131,5 @@
     @include sm-max {
       margin-bottom: 0;
     }
-  }
-}
-
-@keyframes popUpH2 {
-  0% {
-    top: 0
-  }
-
-  50% {
-    top: -75px
-  }
-
-  75% {
-    top: -20px
-  }
-
-  100% {
-    top: -30px
-  }
-}
-
-
-@keyframes popDownH2 {
-  0% {
-    top: -30px
-  }
-
-  45% {
-    top: -90px
-  }
-
-  75% {
-    top: 30px;
-  }
-
-  100% {
-    top: 0
   }
 }

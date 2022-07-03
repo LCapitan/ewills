@@ -12,6 +12,7 @@ const Contact: NextPage = () => {
       <main className="container">
         <NoContent />
       </main>
+      <Footer />
     </>
   )
 }

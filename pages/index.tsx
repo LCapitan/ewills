@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { NextSeo } from 'next-seo';
 
-import { Header, Menu } from '../src/components/index';
+import { Footer } from '../src/components/index';
 import { HomeHero, IntroContent, FeaturedWork } from '../src/containers/index';
 
 import styles from '../styles/Home.module.scss';
@@ -37,6 +37,8 @@ const Home: NextPage = () => {
         <IntroContent />
         <FeaturedWork />
       </main>
+
+      <Footer />
     </>
   )
 }

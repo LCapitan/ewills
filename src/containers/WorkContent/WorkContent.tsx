@@ -10,8 +10,9 @@ import styles from './WorkContent.module.scss';
 const WorkContent = () => {
   return (
     <div className={styles.workContent}>
-      <div className={styles.title}>
-        <h1>work</h1>
+      <div className={styles.pageHeading}>
+        <h1 className={styles.pageTitle}>my work</h1>
+        <div className={styles.subtitle}>here are some of the projects I&#39;ve worked on recently.</div>
       </div>
 
       <ul className={styles.workList}>
